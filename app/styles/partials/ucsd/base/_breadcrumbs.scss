@@ -1,0 +1,34 @@
+.breadcrumb {
+	font-size: 11px;
+}
+
+#tdr_crumbs {
+	background: #fff;
+
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+		padding: 1em 0 0;
+		margin-left: 0;
+	}
+
+	li {
+		color: #666;
+		display: inline;
+		font-size: 80%;
+		line-height: 1;
+		list-style: none;
+		margin-left: 0;
+		text-transform: capitalize;
+
+		a {
+			background: url(img/sprite_icon.png) no-repeat scroll right 5px transparent;
+			padding-right: .8em;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

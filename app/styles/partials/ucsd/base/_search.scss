@@ -1,0 +1,126 @@
+#tdr_search_toggle { //toggle button
+	border-radius : 0;
+	padding: 6px;
+	background: none;
+	border: none;
+
+	.lt-ie8 & {
+		padding: 6px 6px 6px 10px;
+		background-image: url(img/search.png);
+		background-repeat: no-repeat;
+		background-position: 0 8px;
+	}
+}
+
+.tdr_search { //common styling to both search forms
+	.dropdown {
+		@media screen and (min-width: 768px) {
+			margin-right: 10px;
+		}
+	}
+
+	.dropdown-menu {
+		@media screen and (max-width: 768px) {
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 150px;
+		}
+	}
+
+	.search-scope {
+		max-width: 99px;
+		font-size: 11px;
+		padding: 4px 2px 4px 0;
+		float: left;
+	}
+
+	.input-group {
+		float: right;
+	}
+
+	form {
+		margin: 0;
+	}
+
+	.form-control {
+		float: right;
+		border-radius: 0;
+		height: 26px;
+
+		.lt-ie8 & {
+			height: 10px;
+		}
+	}
+}
+
+#tdr_nav { //top nav search bar
+	.tdr_search {
+		padding-top: 2px;
+		float: right;
+		position: relative;
+		max-width: 380px;
+	}
+
+	#tdr_search_content {
+		z-index: 2;
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 40px;
+		float: left;
+		width: 500px;
+		padding: 10px 15px;
+		background-color: #f4f4f4;
+		border: 1px solid #ccc;
+		border-radius: 2px;
+		box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+		background-clip: padding-box;
+	}
+
+	.input-group {
+		width: 360px;
+	}
+}
+
+#tdr_side_nav { //slide out side search bar
+	.tdr_search {
+		padding: 7px;
+		background-color: #fff;
+		border-bottom: 2px solid #BDBDBD;
+		height: 43px;
+
+		.btn {
+			font-size: 12px;
+			padding: 4px 5px;
+
+			.caret {
+				margin-left: 4px;
+			}
+		}
+	}
+
+	.form-control {
+		padding: 6px;
+
+		.lt-ie8 & {
+			width: 96%;
+		}
+	}
+
+	.input-group {
+		width: 54%;
+
+		@media screen and (min-width: $mobile-small) {
+			width: 60%;
+		}
+
+		@media screen and (min-width: $mobile) {
+			width: 70%;
+		}
+
+		@media screen and (min-width: $tablet) {
+			width: 75%;
+		}
+	}
+}

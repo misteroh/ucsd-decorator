@@ -1,0 +1,16 @@
+/********************* VARIABLES & MIXINS */
+@import "partials/variables";
+
+/********************** VENDOR */
+@import "../vendor/superfish/dist/css/superfish";
+
+/********************* BASE */
+@import "partials/ucsd/base/layout";
+@import "partials/ucsd/base/title";
+@import "partials/ucsd/base/nav";
+@import "partials/ucsd/base/search";
+@import "partials/ucsd/base/breadcrumbs";
+@import "partials/ucsd/base/footer";
+@import "partials/ucsd/base/fonts";
+@import "partials/ucsd/base/styling";
+@import "partials/ucsd/base/print";
