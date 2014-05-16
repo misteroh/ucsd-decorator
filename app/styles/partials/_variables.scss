@@ -8,10 +8,19 @@ $mobile-small: 360px;
 $minimum: 320px;
 
 /* COLORS */
+$teal: #2b92b9;
 
 /* LAYOUT VALUES */
 $slider-offset: 83%;
-
+$nav-height: 35px;
 
 /* FONTS */
 $icon-font-path: "../fonts/";
+
+/* MIXINS */
+@mixin transition($time) {
+	-webkit-transition: $time ease-in-out;
+	-moz-transition: $time ease-in-out;
+	-o-transition: $time ease-in-out;
+	transition: $time ease-in-out;
+}

@@ -5,10 +5,7 @@ html {
 
 	&.csstransforms3d.csstransitions {
 		#tdr_slide_wrapper {
-			-webkit-transition: -webkit-transform 500ms ease, opacity 500ms ease;
-			-moz-transition: -moz-transform 500ms ease, opacity 500ms ease;
-			-o-transition: -o-transform 500ms ease, opacity 500ms ease;
-			transition: transform 500ms ease, opacity 500ms ease;
+			@include transition(.5s);
 			z-index: 9;
 		}
 
@@ -20,10 +17,7 @@ html {
 			background-color: #F7F7F7;
 			padding: 0;
 			height: 100%;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			-moz-transition: opacity 0.5s ease-in-out;
-			-o-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
+			@include transition(.5s);
 			z-index: -1;
 			border-right: 1px solid #DADADA;
 		}
@@ -37,20 +31,14 @@ html {
 				-moz-transform: translate3d($slider-offset, 0, 0) scale3d(1, 1, 1);
 				-ms-transform: translate3d($slider-offset, 0, 0) scale3d(1, 1, 1);
 				-o-transform: translate3d($slider-offset, 0, 0) scale3d(1, 1, 1);
-				-webkit-transition: -webkit-transform 500ms ease;
-				-moz-transition: -moz-transform 500ms ease;
-				-o-transition: -o-transform 500ms ease;
-				transition: transform 500ms ease;
+				@include transition(.5s);
 			}
 
 			#tdr_side_nav {
 				z-index: 2;
 				opacity: 1;
 				display: block;
-				-webkit-transition: opacity 0.5s ease-in-out;
-				-moz-transition: opacity 0.5s ease-in-out;
-				-o-transition: opacity 0.5s ease-in-out;
-				transition: opacity 0.5s ease-in-out;
+				@include transition(.5s);
 			}
 		}
 	}
@@ -139,7 +127,7 @@ body {
 		background-color: #FDFDFD;
 		border: 0;
 		min-height: 34px;
-		border-bottom: 1px solid #E6E6E6;
+		border-bottom: 1px solid #eeeeee;
 	}
 
 	#tdr_nav_content {
@@ -203,7 +191,7 @@ body {
 			float: left;
 
 			> li:first-child {
-				border-left: solid 1px #B3CBDC;
+				border-left: solid 1px #eeeeee;
 			}
 		}
 	}
@@ -247,7 +235,7 @@ body {
 	.tdr_nav_list a,.tdr_nav_list span,.sf-menu a,.sf-menu span {
 		background-color: #FDFDFD;
 		border-bottom: solid 3px rgba(255, 255, 255, 0.4);
-		border-right: solid 1px #B3CBDC;
+		border-right: solid 1px #eeeeee;
 		border-left: solid 1px rgba(255, 255, 255, 0.6);
 		color: rgb(0, 75, 110);
 		padding: 9px 15px 8px;
@@ -269,17 +257,17 @@ body {
 	}
 
 	.tdr_nav_list li ul,.sf-menu li ul {
-		border-left: solid 1px #9FB3BF;
-		border-top: solid 1px #9FB3BF;
+		border-left: solid 1px #eeeeee;
+		border-top: solid 1px #eeeeee;
 		margin-left: 0;
 	}
 
 	.tdr_nav_list li li a,.tdr_nav_list li.active li a,.sf-menu li li a,.sf-menu li.active li a {
 		background: #FFF;
-		border-bottom: solid 1px #9FB3BF;
+		border-bottom: solid 1px #eeeeee;
 
 		&:hover {
-			background-color: #E1E9F3;
+			background-color: #fbfbfb;
 		}
 	}
 

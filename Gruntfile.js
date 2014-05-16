@@ -330,10 +330,11 @@ module.exports = function (grunt) {
                     dest: '<%= config.dist %>',
                     src: [
                         '*.{ico,png,txt}',
-                        'styles/*.css', //delete upon re-enabling cssmin in grunt build
                         '_images/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
+                        'docs/{,*/}*.css', //for the kitchen sink...
+                        'docs/{,*/}*.js' //for the kitchen sink...
                     ]
                 },
                 {
@@ -437,7 +438,7 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'autoprefixer',
         'concat',
-        /*'cssmin',*/
+        'cssmin',
         'uglify',
         'copy:dist',
         'modernizr',

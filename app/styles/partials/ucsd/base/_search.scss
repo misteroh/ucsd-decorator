@@ -1,8 +1,10 @@
 #tdr_search_toggle { //toggle button
 	border-radius : 0;
-	padding: 6px;
+	padding: 8px;
 	background: none;
 	border: none;
+	outline: 0;
+	max-height: $nav-height;
 
 	.lt-ie8 & {
 		padding: 6px 6px 6px 10px;
@@ -54,28 +56,74 @@
 	}
 }
 
-#tdr_nav { //top nav search bar
+#tdr_nav { //top nav search
 	.tdr_search {
-		padding-top: 2px;
 		float: right;
 		position: relative;
 		max-width: 380px;
+
+		#tdr_search_content {
+			z-index: 2;
+			position: absolute;
+			right: 0;
+			top: $nav-height;
+			float: left;
+			width: 520px;
+			padding: 15px;
+			background-color: $teal;
+			border: 0;
+			box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+			background-clip: padding-box;
+		}
+
+		&.show {
+			#tdr_search_toggle {
+				background-color: $teal;
+				color: #fff;
+			}
+		}
 	}
 
-	#tdr_search_content {
-		z-index: 2;
-		display: none;
-		position: absolute;
-		right: 0;
-		top: 40px;
-		float: left;
-		width: 500px;
-		padding: 10px 15px;
-		background-color: #f4f4f4;
-		border: 1px solid #ccc;
-		border-radius: 2px;
-		box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
-		background-clip: padding-box;
+	.no-csstransitions & {
+		.tdr_search {
+
+			#tdr_search_content {
+				display: none;
+			}
+
+			&.show {
+				#tdr_search_content {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.csstransitions & {
+		.tdr_search {
+			#tdr_search_toggle {
+				@include transition(.25s);
+			}
+
+			#tdr_search_content {
+				display: block;
+				opacity: 0;
+				@include transition(.25s);
+			}
+
+			&.show {
+				#tdr_search_toggle {
+					background-color: $teal;
+					color: #fff;
+					@include transition(.25s);
+				}
+
+				#tdr_search_content {
+					opacity: 1;
+					@include transition(.25s);
+				}
+			}
+		}
 	}
 
 	.input-group {

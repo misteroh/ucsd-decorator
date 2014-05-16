@@ -3,11 +3,9 @@ $(document).ready(function() {
     var $body = $('body'),
         desktopBreak = 768,
         maxNavHeight = 38,
-        $slideWrapper = $('#tdr_slide_wrapper'),
-        $sideNav = $('#tdr_side_nav'),
         $topNav = $('#tdr_nav'),
         $window = $(window),
-        $search = $('#tdr_search_content'),
+        $search = $topNav.find('.tdr_search'),
         $navList = $('.tdr_nav_list'),
 
     /* do we have a nav menu? */
@@ -31,14 +29,7 @@ $(document).ready(function() {
 
     /* search link */
     $("#tdr_search_toggle").click(function(event) {
-        event.preventDefault();
         $search.toggleClass("show");
-        if ($search.hasClass("show")) {
-            // if menu link is show, hide it
-            if ($navList.hasClass("show")) {
-                $navList.removeClass("show");
-            }
-        }
     });
 
     $(".navbar-toggle").on("click", function() {
