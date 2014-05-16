@@ -63,8 +63,7 @@
     May 9th, 2014</p>
 <h2>
     Getting Started</h2>
-<h3>
-    Prerequisites</h3>
+<h3>Prerequisites</h3>
 <p> Be sure to install these <strong>in this order</strong>.</p>
 <ul>
     <li>
@@ -102,8 +101,15 @@
         </ul>
     </li>
 </ul>
-<h3>
-    The following IDE is recommended, but is not necessary:</h3>
+<h3>Getting Started</h3>
+<ol>
+    <li>Clone the repository (insert link here) to your computer</li>
+    <li>Open up the terminal (Mac/Linux) or command prompt (Windows)</li>
+    <li>Change the directory to the root folder of the decorator</li>
+    <li>Run the command <code>npm install</code> and wait until it is finished</li>
+    <li>The decorator is now ready for editing</li>
+</ol>
+<h4><em>The following IDE is recommended, but is not necessary:</em></h4>
         <p><a href="http://www.jetbrains.com/webstorm/">Webstorm IDE</a></p>
         <p>I&#39;ve obtained a free license for all UCSD employees.</p>
 
@@ -168,7 +174,7 @@ XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre></p>
             </ul>
         </ul>
     </li>
-    <li>Any changes to the .SCSS files will require you to recompile everything into normal .CSS files again. This can either be done by running the command <code>sass --watch</code> <b>before</b> editing the .SCSS files or manually compiling the files by simply running <code>sass</code> in the command prompt.
+    <li>Any changes to the .SCSS files will require you to recompile everything into normal .CSS files again. This can either be done by running the command <code>scss --watch --sourcemap</code> <b>before</b> editing the .SCSS files or manually compiling the files by simply running <code>scss</code> in the command prompt.
     <ul>
         <li><em>This process can be automated. See "WebStorm Integration" below.</em></li>
     </ul>
@@ -257,7 +263,7 @@ XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre></p>
             <li>Program: The location of the SCSS compiler. This will depend on the version you've downloaded and your OS, but it should be the following file (or at least something named similarly):
                 <ul>
                     <li>Windows: <code>C:\Ruby200-x64\bin\scss.bat</code></li>
-                    <li>Mac: <code>???</code></li>
+                    <li>Mac: <code>/usr/bin/scss</code></li>
                 </ul>
             </li>
             <li>Arguments: <code>--no-cache --update $FileName$:$FileNameWithoutExtension$.css</code></li>
@@ -284,7 +290,7 @@ XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre></p>
             <li>Node interpreter: The location of the node program. This should already be filled in. If it isn't, this will depend on the version you've downloaded and your OS, but it should be the following file (or at least something named similarly):
                 <ul>
                     <li>Windows: <code>C:\Program Files\nodejs\node.exe</code></li>
-                    <li>Mac: <code>???</code></li>
+                    <li>Mac: <code>/usr/local/bin/node</code></li>
                 </ul>
             </li>
             <li>Node parameters: You can leave this blank
@@ -293,7 +299,7 @@ XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre></p>
             <li>JavaScript file: This will depend on the version you've downloaded and your OS, but it should be the following file (or at least something named similarly):
                 <ul>
                     <li>Windows: <code>C:\Users\&lt;USERNAME&gt;\AppData\Roaming\npm\node_modules\grunt-cli\bin\grunt</code></li>
-                    <li>Mac: <code>???</code></li>
+                    <li>Mac: <code>/usr/local/bin/grunt</code></li>
                 </ul>
             </li>
             <li>You can leave the rest of the fields unchanged</li>
