@@ -55,5 +55,5 @@ $(document).ready(function() {
     }
 
     FastClick.attach(document.body);
-    $window.on('ready orientationchange resize', navMover);
+    $window.on('load orientationchange resize', navMover);
 });

@@ -7,10 +7,14 @@
 	max-height: $nav-height;
 
 	.lt-ie8 & {
-		padding: 6px 6px 6px 10px;
+		padding: 8px 6px 8px 13px;
 		background-image: url(img/search.png);
 		background-repeat: no-repeat;
-		background-position: 0 8px;
+		background-position: 2px 8px;
+	}
+
+	.lt-ie8 .show & {
+		background-image: url(img/search-teal.png);
 	}
 }
 
@@ -70,7 +74,7 @@
 			float: left;
 			width: 520px;
 			padding: 15px;
-			background-color: $teal;
+			background-color: $search-teal;
 			border: 0;
 			box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
 			background-clip: padding-box;
@@ -78,7 +82,7 @@
 
 		&.show {
 			#tdr_search_toggle {
-				background-color: $teal;
+				background-color: $search-teal;
 				color: #fff;
 			}
 		}
@@ -99,6 +103,14 @@
 		}
 	}
 
+	.lt-ie8.no-csstransitions & {
+		.tdr_search.show {
+			#tdr_search_content {
+				top: 33px;
+			}
+		}
+	}
+
 	.csstransitions & {
 		.tdr_search {
 			#tdr_search_toggle {
@@ -113,7 +125,7 @@
 
 			&.show {
 				#tdr_search_toggle {
-					background-color: $teal;
+					background-color: $search-teal;
 					color: #fff;
 					@include transition(.25s);
 				}
@@ -129,6 +141,10 @@
 	.input-group {
 		width: 360px;
 	}
+}
+
+#tdr_search_content {
+
 }
 
 #tdr_side_nav { //slide out side search bar
