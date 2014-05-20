@@ -56,10 +56,10 @@
     </style>
 </head>
 <body>
+<div id="tdr_content_content">
 <h1>
-    UCSD Decorator 4.0 Readme</h1>
-<p>
-    By <a href="mailto:me@andrewoh.co">Andrew Oh</a><br />
+    UCSD Decorator 4.0 [Work in Progress]</h1>
+<p>By <a href="mailto:me@andrewoh.co">Andrew Oh</a><br />
     May 9th, 2014</p>
 <h2>
     Getting Started</h2>
@@ -87,10 +87,19 @@
         </ul>
     </li>
     <li>
-        <a href="https://www.ruby-lang.org/en/installation/">Ruby</a></li>
-    <ul>
-        <li>This is only necessary if you are on Windows. Ruby already comes with Apple OSX.</li>
-    </ul>
+        <a href="https://www.ruby-lang.org/en/installation/">Ruby</a>
+        <ul>
+            <li>This is only necessary if you are on Windows. Ruby already comes with Apple OSX.</li>
+            <li>However, even if you already have it installed, please ensure that you have a modern version installed (greater than v.</li>
+        </ul>
+    </li>
+    <li>
+        <a href="http://compass-style.org/install/">Compass</a>
+        <ul>
+            <li>Windows: <code>gem update --system</code> and then <code>gem install compass</code></li>
+            <li>Max: <code>sudo gem update --system</code> and then <code>sudo gem install compass</code></li>
+        </ul>
+    </li>
     <li>
         <a href="http://sass-lang.com/install">SASS</a>
         <ul>
@@ -103,27 +112,36 @@
 </ul>
 <h3>Getting Started</h3>
 <ol>
-    <li>Clone the repository (insert link here) to your computer</li>
+    <li>Clone the repository (<a href="https://github.com/misteroh/ucsd-decorator">https://github.com/misteroh/ucsd-decorator [TODO: CHANGE TO SVN WHENEVER IT IS FIXED]</a>) to a location on your computer</li>
     <li>Open up the terminal (Mac/Linux) or command prompt (Windows)</li>
-    <li>Change the directory to the root folder of the decorator</li>
-    <li>Run the command <code>npm install</code> and wait until it is finished</li>
+    <li>Change the directory to the root folder of the decorator (For example: <code>C:\My Documents\ucsd-decorator</code>)
+        <ul>
+            <li>This can be done with <code>cd &lt;directory name&gt;</code></li>
+            <li>For example, <code>cd C:\My Documents\ucsd-decorator</code></li>
+        </ul>
+    </li>
+    <li>Run the command <code>npm install</code> and wait until it is finished
+        <ul>
+            <li>If you get an error that says it can't find <code>package.json</code>, please ensure that you are in the root directory of the decorator. Not <code>app</code> or <code>dist</code>.</li>
+        </ul>
+    </li>
     <li>The decorator is now ready for editing</li>
 </ol>
 <h4><em>The following IDE is recommended, but is not necessary:</em></h4>
-        <p><a href="http://www.jetbrains.com/webstorm/">Webstorm IDE</a></p>
-        <p>I&#39;ve obtained a free license for all UCSD employees.</p>
+<p><a href="http://www.jetbrains.com/webstorm/">Webstorm IDE</a></p>
+<p>I&#39;ve obtained a free license for all UCSD employees.</p>
 
-        <p><strong>User Name</strong><br>
-        <code>University of California San Diego</code></p>
+<p><strong>User Name</strong><br>
+    <code>University of California San Diego</code></p>
 
-        <b>License</b>
+<b>License</b>
         <pre>55991-19032014
 00002pwnno&quot;e25KK7fzoL7BeW62cs0
 w84KKRWoV1CBkJENSXMfq9pc3k5g6e
-XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre></p>
+XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre>
 
-        <p><b>License Renewal</b><br />
-        This license expires every year, so please be sure to renew the license every year (for free!) by contacting them &quot;closer to (the) license expiration date at <a href="mailto:classroom@jetbrains.com">classroom@jetbrains.com</a> and let us know a little about how your university used WebStorm in trainings, and we&rsquo;ll happily issue a renewal.&quot;</p>
+<p><b>License Renewal</b><br />
+    This license expires every year, so please be sure to renew the license every year (for free!) by contacting them &quot;closer to (the) license expiration date at <a href="mailto:classroom@jetbrains.com">classroom@jetbrains.com</a> and let us know a little about how your university used WebStorm in trainings, and we&rsquo;ll happily issue a renewal.&quot;</p>
 <h2>
     Editing</h2>
 <h3>
@@ -157,64 +175,65 @@ XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre></p>
 &lt;!-- build:css(.tmp) styles/cms-min.css --&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/cms.css&quot;&gt;
 &lt;!-- endbuild --&gt;</pre>
-            </li>
             <p>In the above block, <code>styles/cms-min.css</code> refers to the destination file that will be created after running <code>grunt</code>. (See "Building" below)</p>
-            <li>The <code>grunt</code> process will automatically update the CSS file reference in the <code>dist</code> version of the HTML file.</li>
-            <ul>
-                <li>
-                    <p>For example, if the following block is inside <code>app/index.html</code>:</p>
+            </li>
+            <li>The <code>grunt</code> process will automatically update the CSS file reference in the <code>dist</code> version of the HTML file.
+                <ul>
+                    <li>
+                        <p>For example, if the following block is inside <code>app/index.html</code>:</p>
                     <pre>
 &lt;!-- build:css(.tmp) styles/cms-min.css --&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/cms.css&quot;&gt;
 &lt;!-- endbuild --&gt;</pre>
-                    <p>Then after running <code>grunt</code>, the final <code>dist/index.html</code> will instead contain the following block:</p>
+                        <p>Then after running <code>grunt</code>, the final <code>dist/index.html</code> will instead contain the following block:</p>
                     <pre>
 &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/cms-min.css&quot;&gt;</pre>
-                </li>
-            </ul>
+                    </li>
+                </ul></li>
         </ul>
     </li>
     <li>Any changes to the .SCSS files will require you to recompile everything into normal .CSS files again. This can either be done by running the command <code>scss --watch --sourcemap</code> <b>before</b> editing the .SCSS files or manually compiling the files by simply running <code>scss</code> in the command prompt.
-    <ul>
-        <li><em>This process can be automated. See "WebStorm Integration" below.</em></li>
-    </ul>
+        <ul>
+            <li><em>This process can be automated. See "WebStorm Integration" below.</em></li>
+        </ul>
     </li>
 </ul>
 
 <h3>JavaScript</h3>
-    <ul>
-        <li>Any JavaScript files inside <code>app/scripts&quot;</code> along with any vendor .js files under <code>app/vendor</code> are minified and concatenated together <strong>IF AND ONLY IF</strong> they are first called within <code>app/index.html</code> between the <code>build:js</code> comment blocks.</li>
-        <li>All JavaScript files called in between a <code>build:js</code> comment and <code>&lt;!-- endbuild --&gt;</code> block will become concatenated into a single .JS file named in the first comment line.
-            <ul>
-                <li>
-                    For example: <pre>&lt;!-- build:js({app,.tmp}) scripts/cms-min.js --&gt;
+<ul>
+    <li>Any JavaScript files inside <code>app/scripts&quot;</code> along with any vendor .js files under <code>app/vendor</code> are minified and concatenated together <strong>IF AND ONLY IF</strong> they are first called within <code>app/index.html</code> between the <code>build:js</code> comment blocks.</li>
+    <li>All JavaScript files called in between a <code>build:js</code> comment and <code>&lt;!-- endbuild --&gt;</code> block will become concatenated into a single .JS file named in the first comment line.
+        <ul>
+            <li>
+                For example: <pre>&lt;!-- build:js({app,.tmp}) scripts/cms-min.js --&gt;
     &lt;script src=&quot;scripts/ucsd/copyright.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;scripts/ucsd/footer.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;scripts/ucsd/logout.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;scripts/ucsd/flexslider-init.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;scripts/ucsd/drawer.js&quot;&gt;&lt;/script&gt;
 &lt;!-- endbuild --&gt;</pre>
-                </li>
-                <p>In the above block, <code>scripts/cms-min.js</code> refers to the destination file that will be created after running <code>grunt</code>. (See "Building" below)</p>
-                <li>The <code>grunt</code> process will automatically update the .JS file reference in the <code>dist</code> version of the HTML file.</li>
+
+            <p>In the above block, <code>scripts/cms-min.js</code> refers to the destination file that will be created after running <code>grunt</code>. (See "Building" below)</p></li>
+            <li>The <code>grunt</code> process will automatically update the .JS file reference in the <code>dist</code> version of the HTML file.
                 <ul>
                     <li>
                         <p>For example, if the following block is inside <code>app/index.html</code>:</p>
-<pre>&lt;!-- build:js({app,.tmp}) scripts/cms-min.js --&gt;
-    &lt;script src=&quot;scripts/ucsd/copyright.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;scripts/ucsd/footer.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;scripts/ucsd/logout.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;scripts/ucsd/flexslider-init.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;scripts/ucsd/drawer.js&quot;&gt;&lt;/script&gt;
-&lt;!-- endbuild --&gt;</pre>
+    <pre>&lt;!-- build:js({app,.tmp}) scripts/cms-min.js --&gt;
+        &lt;script src=&quot;scripts/ucsd/copyright.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;scripts/ucsd/footer.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;scripts/ucsd/logout.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;scripts/ucsd/flexslider-init.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;scripts/ucsd/drawer.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- endbuild --&gt;</pre>
                         <p>Then after running <code>grunt</code>, the final <code>dist/index.html</code> will instead contain the following block:</p>
-                    <pre>
-&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/cms-min.js&quot;&gt;</pre>
+                        <pre>
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/cms-min.js&quot;&gt;</pre>
                     </li>
                 </ul>
-            </ul>
-        </li>
-    </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
 <h2>
     Building</h2>
 <ol>
@@ -266,7 +285,7 @@ XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre></p>
                     <li>Mac: <code>/usr/bin/scss</code></li>
                 </ul>
             </li>
-            <li>Arguments: <code>--no-cache --update $FileName$:$FileNameWithoutExtension$.css</code></li>
+            <li>Arguments: <code>--no-cache --sourcemap --update $FileName$:$FileNameWithoutExtension$.css</code></li>
             <li>Working directory: <code>$FileDir$</code></li>
             <li>Output paths to refresh: <code>$FileNameWithoutExtension$.css</code></li>
         </ul>
@@ -277,11 +296,11 @@ XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre></p>
 <ol>
     <li>In WebStorm, open the <code>File</code> menu and click on <code>Settings</code></li>
     <li>On the left menu under <code>IDE Settings</code>, click on <code>Plugins</code></li>
-    <li>Check if the <code>NodeJS</code> plugin has been installed already. If so, skip to step 7.</li>
+    <li>Check if the <code>NodeJS</code> plugin has been installed already by searching for <code>NodeJs</code> and seeing if it shows up in the results with a checkmark next to. If so, skip to step 7. If not, continue on to step 4.</li>
     <li>Click on <code>Install Jetbrains plugin...</code></li>
     <li>Search for <code>NodeJS</code> and install it by clicking the <code>Install plugin</code> on the right</li>
     <li>Press <code>OK</code> until you are back to the main WebStorm window</li>
-    <li>Click on the <code>Run</code> menu</li>
+    <li>Click on the <code>Run</code> menu in the WebStorm main menu</li>
     <li>Click on <code>Edit Configurations</code></li>
     <li>Click on the green plus sign at the top left and then <code>Node.js</code></li>
     <li>Make sure the fields are filled out as following:
@@ -317,5 +336,7 @@ XRgQ8F0z4XwshZho8uMuZOSem1RuSt</pre></p>
 
 <p>
     If there are any more errors, feel free to shoot me an e-mail at <a href="mailto:me@andrewoh.co">me@andrewoh.co</a></p>
+
+</div>
 </body>
 </html>
