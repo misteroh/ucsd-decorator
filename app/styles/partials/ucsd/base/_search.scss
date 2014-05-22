@@ -74,15 +74,15 @@
 			float: left;
 			width: 520px;
 			padding: 15px;
-			background-color: $search-teal;
+			background-color: $search-bg;
 			border: 0;
-			box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+			box-shadow: 0;
 			background-clip: padding-box;
 		}
 
 		&.show {
 			#tdr_search_toggle {
-				background-color: $search-teal;
+				background-color: $search-bg;
 				color: #fff;
 			}
 		}
@@ -114,25 +114,25 @@
 	.csstransitions & {
 		.tdr_search {
 			#tdr_search_toggle {
-				@include transition(.25s);
+				@include transition(all, .25s);
 			}
 
 			#tdr_search_content {
 				display: block;
 				opacity: 0;
-				@include transition(.25s);
+				@include transition(background-color, .25s);
 			}
 
 			&.show {
 				#tdr_search_toggle {
-					background-color: $search-teal;
+					background-color: $search-bg;
 					color: #fff;
-					@include transition(.25s);
+					@include transition(all, .25s);
 				}
 
 				#tdr_search_content {
 					opacity: 1;
-					@include transition(.25s);
+					@include transition(background-color, .25s);
 				}
 			}
 		}

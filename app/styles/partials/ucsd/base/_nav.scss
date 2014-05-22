@@ -5,7 +5,7 @@ html {
 
 	&.csstransforms3d.csstransitions {
 		#tdr_slide_wrapper {
-			@include transition(.5s);
+			@include transition(all, $trans-time);
 			z-index: 9;
 		}
 
@@ -17,28 +17,26 @@ html {
 			background-color: #F7F7F7;
 			padding: 0;
 			height: 100%;
-			@include transition(.5s);
+			@include transition(opacity, $trans-time);
 			z-index: -1;
 			border-right: 1px solid #DADADA;
 		}
 
 		body.active {
 			#tdr_slide_wrapper {
-				position: relative;
 				overflow: hidden;
-				background-color: #000;
-				-webkit-transform: translate3d($slider-offset, 0, 0) scale3d(1, 1, 1);
-				-moz-transform: translate3d($slider-offset, 0, 0) scale3d(1, 1, 1);
-				-ms-transform: translate3d($slider-offset, 0, 0) scale3d(1, 1, 1);
-				-o-transform: translate3d($slider-offset, 0, 0) scale3d(1, 1, 1);
-				@include transition(.5s);
+				-webkit-transform: translate3d($slider-offset, 0, 0);
+				-moz-transform: translate3d($slider-offset, 0, 0);
+				-ms-transform: translate3d($slider-offset, 0, 0);
+				-o-transform: translate3d($slider-offset, 0, 0);
+				@include transition(all, $trans-time);
 			}
 
 			#tdr_side_nav {
 				z-index: 2;
 				opacity: 1;
-				display: block;
-				@include transition(.5s);
+				@include transition(opacity, $trans-time);
+				@include transition-delay(.15s);
 			}
 		}
 	}
@@ -317,6 +315,38 @@ body {
 	.icon-bar + .icon-bar {
 		@media only screen and (min-width: $mobile-small) {
 			margin-top: 6px;
+		}
+	}
+
+	html.csstransforms3d.csstransitions & {
+		.icon-bar {
+			&:nth-child(2), &:nth-child(3), &:nth-child(4) {
+				@include transition(all, $trans-time);
+				@include transition-delay(.25s);
+			}
+		}
+	}
+
+	html.csstransforms3d.csstransitions .active & {
+		.icon-bar {
+			background-color: #fff;
+
+			&:nth-child(2) {
+				@include menu-transition(8px, 45deg);
+			}
+
+			&:nth-child(3) {
+				opacity: 0;
+			}
+
+			&:nth-child(4) {
+				@include menu-transition(-8px, -45deg);
+			}
+
+			&:nth-child(2), &:nth-child(4) {
+				@include transition(all, $trans-time);
+				@include transition-delay(.25s);
+			}
 		}
 	}
 }

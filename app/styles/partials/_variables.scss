@@ -9,19 +9,37 @@ $minimum: 320px;
 
 /* COLORS */
 $teal: #2b92b9;
-$search-teal: #2B607E;
+$search-bg: rgb(198, 211, 218);
 
 /* LAYOUT VALUES */
 $slider-offset: 83%;
 $nav-height: 35px;
+$trans-time: .2s;
 
 /* FONTS */
 $icon-font-path: "../fonts/";
 
 /* MIXINS */
-@mixin transition($time) {
-	-webkit-transition: $time ease-in-out;
-	-moz-transition: $time ease-in-out;
-	-o-transition: $time ease-in-out;
-	transition: $time ease-in-out;
+@mixin transition($property, $time) {
+	-webkit-transition: $property $time ease;
+	-moz-transition: $property $time ease;
+	-ms-transition-delay: $property $time ease;
+	-o-transition: $property $time ease;
+	transition: $property $time ease;
+}
+
+@mixin menu-transition($offset, $angle) {
+	-webkit-transform: translate3d(0, $offset, 0) rotateZ($angle);
+	-moz-transform: translate3d(0, $offset, 0) rotateZ($angle);
+	-ms-transform: translate3d(0, $offset, 0) rotateZ($angle);
+	-o-transform: translate3d(0, $offset, 0) rotateZ($angle);
+	transform: translate3d(0, $offset, 0) rotateZ($angle);
+}
+
+@mixin transition-delay($time) {
+	-webkit-transition-delay: $time;
+	-moz-transition-delay: $time;
+	-ms-transition-delay: $time;
+	-o-transition-delay: $time;
+	transition-delay: $time;
 }
