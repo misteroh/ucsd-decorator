@@ -461,14 +461,14 @@ div.styled
     }
   }
 
-#page_nav_title {
-  display: none;
-}
-
   ul {
     margin: .4em 0 -.4em 0;
     padding: 0;
   }
+}
+
+#page_nav_title {
+  margin-bottom: 0.7em !important;
 }
 
 /* ie hack for height */

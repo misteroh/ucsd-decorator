@@ -922,8 +922,8 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
  * CSS Styling for the page nav aside
  */
 div.styled {
-  background: #FDFDFD;
-  border: 1px solid #eeeeee;
+  background: #F2F5F7;
+  border: 1px solid #C8CFD3;
   margin-bottom: 1em;
   padding: 1em; }
   div.styled h2, div.styled h3, div.styled h4, div.styled h5, div.styled h6 {
@@ -940,7 +940,7 @@ div.styled
   padding: 0; }
   div.styled
   #page_nav li {
-    border-top: 1px solid #F8F8F8;
+    border-top: 1px solid #DBD7D7;
     color: #06c;
     list-style: none;
     margin: 0;
@@ -960,7 +960,7 @@ div.styled
       display: none; }
     div.styled
     #page_nav li a:hover {
-      background-color: #fff;
+      background-color: #EBEEF0;
       text-decoration: none; }
     div.styled
     #page_nav li li {
@@ -969,12 +969,12 @@ div.styled
       #page_nav li li a:hover {
         text-decoration: underline; }
   div.styled
-  #page_nav #page_nav_title {
-    display: none; }
-  div.styled
   #page_nav ul {
     margin: .4em 0 -.4em 0;
     padding: 0; }
+
+#page_nav_title {
+  margin-bottom: 0.7em !important; }
 
 /* ie hack for height */
 * html #page_nav li {
@@ -1033,7 +1033,7 @@ div.styled
     float: left;
     width: 520px;
     padding: 15px;
-    background-color: #c6d3da;
+    background-color: #B4BABE;
     border: 0;
     box-shadow: 0;
     background-clip: padding-box; }
@@ -1061,13 +1061,13 @@ div.styled
   -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease; }
 .csstransitions #tdr_nav .tdr_search.show #tdr_search_toggle {
-  background-color: #c6d3da;
+  background-color: #B4BABE;
   color: #fff;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -ms-transition-delay: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease; }
+  -webkit-transition: all 0.10s ease;
+  -moz-transition: all 0.10s ease;
+  -ms-transition-delay: all 0.10s ease;
+  -o-transition: all 0.10s ease;
+  transition: all 0.10s ease; }
 .csstransitions #tdr_nav .tdr_search.show #tdr_search_content {
   opacity: 1;
   -webkit-transition: background-color 0.25s ease;
