@@ -174,9 +174,17 @@ body {
 				*height: 33px; /* IE7 only hack */
 			}
 
+			li li {
+				_margin: 0;
+				/* IE6 only hack */
+			}
+
 			li li a {
 				*height: 16px;
 				/* IE7 only hack */
+
+				_height: 16px;
+				/* IE6 only hack */
 			}
 		}
 
@@ -357,38 +365,31 @@ body {
 
 	}
 
-  .tdr_nav_list {
-    padding: 0;
+	.tdr_nav_list {
+		padding: 0;
 
-    > li {
-      border-bottom: 1px solid #ccc;
-    }
+		> li {
+			border-bottom: 1px solid #ccc;
+		}
 
-    li {
-      margin: 0;
-      padding: 10px;
+		li {
+			margin: 0;
+			padding: 10px;
 
-      a {
-        margin: 0px;
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
+			&.sfHover {
+				background-color: #fff;
+			}
 
-      &.sfHover {
-        background-color: #fff;
-      }
+			&:hover {
+				background-color: #fff;
+			}
+		}
 
-      &:hover {
-        background-color: #fff;
-      }
-    }
-
-    ul {
-      margin-top: 5px;
-      padding: 0;
-    }
-  }
+		ul {
+			margin-top: 5px;
+			padding: 0;
+		}
+	}
 }
 
 /**********************************************************************
@@ -396,7 +397,7 @@ body {
  */
 
 div.styled {
-	background: #FAFAFA;
+	background: #FDFDFD;
 	border: 1px solid #eeeeee;
 	margin-bottom: 1em;
 	padding: 1em;
