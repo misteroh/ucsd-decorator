@@ -771,14 +771,9 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
         float: none;
         *height: 33px;
         /* IE7 only hack */ }
-      #tdr_nav .tdr_nav_list li li {
-        _margin: 0;
-        /* IE6 only hack */ }
       #tdr_nav .tdr_nav_list li li a {
         *height: 16px;
-        /* IE7 only hack */
-        _height: 16px;
-        /* IE6 only hack */ } }
+        /* IE7 only hack */ } }
     @media only screen and (min-width: 768px) {
       #tdr_nav .tdr_nav_list {
         float: left; }
@@ -910,6 +905,11 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
     #tdr_side_nav .tdr_nav_list li {
       margin: 0;
       padding: 10px; }
+      #tdr_side_nav .tdr_nav_list li a {
+        margin: 0px;
+        display: block;
+        width: 100%;
+        height: 100%; }
       #tdr_side_nav .tdr_nav_list li.sfHover {
         background-color: #fff; }
       #tdr_side_nav .tdr_nav_list li:hover {
@@ -918,7 +918,7 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
       margin-top: 5px;
       padding: 0; }
 
-/********************************************************************** 
+/**********************************************************************
  * CSS Styling for the page nav aside
  */
 div.styled {
@@ -929,13 +929,10 @@ div.styled {
   div.styled h2, div.styled h3, div.styled h4, div.styled h5, div.styled h6 {
     color: #738AA3;
     text-shadow: 0 1px 1px #FFFFFF; }
-  #page_nav_title {
-      margin-bottom: .7em;
-  }
   div.styled h2 {
     font-size: 140%; }
   div.styled h3 {
-    font-size: 115%; }
+    font-size: 115%; } /**/
 
 div.styled
 #page_nav {
@@ -943,7 +940,7 @@ div.styled
   padding: 0; }
   div.styled
   #page_nav li {
-    border-top: 1px solid #F0EBEB;
+    border-top: 1px solid #F8F8F8;
     color: #06c;
     list-style: none;
     margin: 0;
@@ -963,14 +960,13 @@ div.styled
       display: none; }
     div.styled
     #page_nav li a:hover {
-      background-color: #F1F1F1;
+      background-color: #fff;
       text-decoration: none; }
     div.styled
     #page_nav li li {
       font-size: 85%; }
       div.styled
       #page_nav li li a:hover {
-        background-color: #fff;
         text-decoration: underline; }
   div.styled
   #page_nav ul {
