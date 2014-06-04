@@ -174,17 +174,9 @@ body {
 				*height: 33px; /* IE7 only hack */
 			}
 
-			li li {
-				_margin: 0;
-				/* IE6 only hack */
-			}
-
 			li li a {
 				*height: 16px;
 				/* IE7 only hack */
-
-				_height: 16px;
-				/* IE6 only hack */
 			}
 		}
 
@@ -365,31 +357,38 @@ body {
 
 	}
 
-	.tdr_nav_list {
-		padding: 0;
+  .tdr_nav_list {
+    padding: 0;
 
-		> li {
-			border-bottom: 1px solid #ccc;
-		}
+    > li {
+      border-bottom: 1px solid #ccc;
+    }
 
-		li {
-			margin: 0;
-			padding: 10px;
+    li {
+      margin: 0;
+      padding: 10px;
 
-			&.sfHover {
-				background-color: #fff;
-			}
+      a {
+        margin: 0px;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
 
-			&:hover {
-				background-color: #fff;
-			}
-		}
+      &.sfHover {
+        background-color: #fff;
+      }
 
-		ul {
-			margin-top: 5px;
-			padding: 0;
-		}
-	}
+      &:hover {
+        background-color: #fff;
+      }
+    }
+
+    ul {
+      margin-top: 5px;
+      padding: 0;
+    }
+  }
 }
 
 /**********************************************************************
