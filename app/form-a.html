@@ -109,46 +109,33 @@
 
 
         <div id="tdr_crumbs">
-            <div id="tdr_crumbs_content"><ul id="tdr_crumbs_list"><li><a href="#">Templates</a></li>&nbsp;<li>Two Column</li></ul></div>
+            <div id="tdr_crumbs_content"><ul id="tdr_crumbs_list"><li><a href="#">Templates</a></li>&nbsp;<li>Basic Form</li></ul></div>
         </div>
 
         <div class="tdr_fonts" id="tdr_content">
             <div id="tdr_content_content">
-                <div id="tdr_2_col_content">
-                    <h1>Two Column [Work in Progress]</h1>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                </div>
-
-                <div id="tdr_2_col_nav">
-                    <span id="site-logo">
-                        <logo/>
-                    </span>
-
-                    <div class="styled">
-
-                        <h2 id="page_nav_title">
-                            CMS Kitchen Sink
-                        </h2>
-
-                        <ul id="page_nav">
-                            <li class="">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="expanded active">
-                                Templates
-                                <ul>
-                                    <li><a href="blank-slate.html">Blank Slate</a></li>
-                                    <li><a href="two-column.html">Two Column</a></li>
-                                    <li><a href="three-column.html">Three Column</a></li>
-                                    <li><a href="form-a.html">Basic Form</a></li>
-                                </ul>
-                            </li>
-                            <li class=""><a href="docs/index.html">CMS Kitchen Sink</a></li>
-                        </ul>
+                <h1>Form A [Work in Progress]</h1>
+                <div><form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                     </div>
-
-                    <custom/>
-                </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form></div>
             </div>
         </div>
 
@@ -173,6 +160,7 @@
                 </ul>
             </div>
         </div>
+
     </div>
 
     <nav id="tdr_side_nav" class="navbar nav-offcanvas" role="navigation">
@@ -192,13 +180,13 @@
 
         <ul class="tdr_nav_list">
             <li>
-                <a href="index.html">Home</a>
+                <a href="#">Home</a>
             </li>
             <li class="active">
                 <a href="#">Templates<b class="caret"></b></a>
                 <ul>
                     <li><a href="blank-slate.html">Blank Slate</a></li>
-                    <li><a class="active" href="two-column.html">Two Column</a></li>
+                    <li><a href="two-column.html">Two Column</a></li>
                     <li><a href="three-column.html">Three Column</a></li>
                     <li><a href="form-a.html">Basic Form</a></li>
                 </ul>
