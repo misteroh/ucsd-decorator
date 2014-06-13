@@ -725,7 +725,7 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
   .navbar .active {
     background-color: #FFFFFF; }
 
-.tdr_nav_list {
+#tdr_nav_list, .tdr_nav_list {
   margin: 0; }
 
 #tdr_nav {
@@ -761,45 +761,45 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
   #tdr_nav .nav .open > a, #tdr_nav .nav .open > a:hover, #tdr_nav .nav .open > a:focus {
     background-color: #fff;
     border-color: #d9d9d9; }
-  #tdr_nav .tdr_nav_list, #tdr_nav .tdr_nav_list *, #tdr_nav .sf-menu, #tdr_nav .sf-menu * {
+  #tdr_nav #tdr_nav_list, #tdr_nav .tdr_nav_list, #tdr_nav #tdr_nav_list *, #tdr_nav .tdr_nav_list *, #tdr_nav .sf-menu, #tdr_nav .sf-menu * {
     padding: 0;
     list-style: none; }
-  #tdr_nav .tdr_nav_list {
+  #tdr_nav #tdr_nav_list, #tdr_nav .tdr_nav_list {
     width: 95%; }
     @media only screen and (max-width: 768px) {
-      #tdr_nav .tdr_nav_list li {
+      #tdr_nav #tdr_nav_list li, #tdr_nav .tdr_nav_list li {
         float: none;
         *height: 33px;
         /* IE7 only hack */ }
-      #tdr_nav .tdr_nav_list li li a {
+      #tdr_nav #tdr_nav_list li li a, #tdr_nav .tdr_nav_list li li a {
         *height: 16px;
         /* IE7 only hack */ } }
     @media only screen and (min-width: 768px) {
-      #tdr_nav .tdr_nav_list {
+      #tdr_nav #tdr_nav_list, #tdr_nav .tdr_nav_list {
         float: left; }
-        #tdr_nav .tdr_nav_list > li:first-child {
+        #tdr_nav #tdr_nav_list > li:first-child, #tdr_nav .tdr_nav_list > li:first-child {
           border-left: solid 1px #eeeeee; } }
-  #tdr_nav .tdr_nav_list ul {
+  #tdr_nav #tdr_nav_list ul, #tdr_nav .tdr_nav_list ul {
     display: none; }
     @media only screen and (min-width: 768px) {
-      #tdr_nav .tdr_nav_list ul {
+      #tdr_nav #tdr_nav_list ul, #tdr_nav .tdr_nav_list ul {
         position: absolute; } }
-  #tdr_nav .tdr_nav_list li:hover, #tdr_nav .sf-menu li:hover {
+  #tdr_nav #tdr_nav_list li:hover, #tdr_nav .tdr_nav_list li:hover, #tdr_nav .sf-menu li:hover {
     visibility: inherit; }
   @media only screen and (min-width: 768px) {
-    #tdr_nav .tdr_nav_list li, #tdr_nav .sf-menu li {
+    #tdr_nav #tdr_nav_list li, #tdr_nav .tdr_nav_list li, #tdr_nav .sf-menu li {
       float: left; } }
-  #tdr_nav .tdr_nav_list a, #tdr_nav .tdr_nav_list span, #tdr_nav .sf-menu a, #tdr_nav .sf-menu span {
+  #tdr_nav #tdr_nav_list a, #tdr_nav .tdr_nav_list a, #tdr_nav #tdr_nav_list span, #tdr_nav .tdr_nav_list span, #tdr_nav .sf-menu a, #tdr_nav .sf-menu span {
     display: block;
     white-space: nowrap; }
-  #tdr_nav .tdr_nav_list li:hover ul, #tdr_nav .tdr_nav_list li.sfHover ul, #tdr_nav .sf-menu li:hover ul, #tdr_nav .sf-menu li.sfHover ul {
+  #tdr_nav #tdr_nav_list li:hover ul, #tdr_nav .tdr_nav_list li:hover ul, #tdr_nav #tdr_nav_list li.sfHover ul, #tdr_nav .tdr_nav_list li.sfHover ul, #tdr_nav .sf-menu li:hover ul, #tdr_nav .sf-menu li.sfHover ul {
     z-index: 999; }
-  #tdr_nav .tdr_nav_list li li, #tdr_nav .sf-menu li li {
+  #tdr_nav #tdr_nav_list li li, #tdr_nav .tdr_nav_list li li, #tdr_nav .sf-menu li li {
     float: none;
     _margin-bottom: -17px; }
-  #tdr_nav .tdr_nav_list span, #tdr_nav .sf-menu span {
+  #tdr_nav #tdr_nav_list span, #tdr_nav .tdr_nav_list span, #tdr_nav .sf-menu span {
     cursor: default; }
-  #tdr_nav .tdr_nav_list a, #tdr_nav .tdr_nav_list span, #tdr_nav .sf-menu a, #tdr_nav .sf-menu span {
+  #tdr_nav #tdr_nav_list a, #tdr_nav .tdr_nav_list a, #tdr_nav #tdr_nav_list span, #tdr_nav .tdr_nav_list span, #tdr_nav .sf-menu a, #tdr_nav .sf-menu span {
     background-color: #FDFDFD;
     border-bottom: solid 3px rgba(255, 255, 255, 0.4);
     border-right: solid 1px #eeeeee;
@@ -807,21 +807,21 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
     color: #004b6e;
     padding: 9px 15px 8px;
     text-decoration: none; }
-  #tdr_nav .tdr_nav_list > li.sfHover > a {
+  #tdr_nav #tdr_nav_list > li.sfHover > a, #tdr_nav .tdr_nav_list > li.sfHover > a {
     border-bottom: solid 3px #9FB3BF; }
-  #tdr_nav .tdr_nav_list li.active > a, #tdr_nav .tdr_nav_list li.active > span, #tdr_nav .sf-menu li.active > a, #tdr_nav .sf-menu li.active > span {
+  #tdr_nav #tdr_nav_list li.active > a, #tdr_nav .tdr_nav_list li.active > a, #tdr_nav #tdr_nav_list li.active > span, #tdr_nav .tdr_nav_list li.active > span, #tdr_nav .sf-menu li.active > a, #tdr_nav .sf-menu li.active > span {
     background-color: #FDFDFD;
     border-bottom: #D56A03 solid 3px; }
-  #tdr_nav .tdr_nav_list li:hover, #tdr_nav .tdr_nav_list li.sfHover, #tdr_nav .tdr_nav_list a:focus, #tdr_nav .tdr_nav_list a:hover, #tdr_nav .tdr_nav_list a:active, #tdr_nav .tdr_nav_list span:focus, #tdr_nav .tdr_nav_list span:hover, #tdr_nav .tdr_nav_list span:active, #tdr_nav .tdr_nav_list li.active a:focus, #tdr_nav .tdr_nav_list li.active a:hover, #tdr_nav .tdr_nav_list li.active a:active, #tdr_nav .tdr_nav_list li.active span:focus, #tdr_nav .tdr_nav_list li.active span:hover, #tdr_nav .tdr_nav_list li.active span:active, #tdr_nav .sf-menu li:hover, #tdr_nav .sf-menu li.sfHover, #tdr_nav .sf-menu a:focus, #tdr_nav .sf-menu a:hover, #tdr_nav .sf-menu a:active, #tdr_nav .sf-menu span:focus, #tdr_nav .sf-menu span:hover, #tdr_nav .sf-menu span:active, #tdr_nav .sf-menu li.active a:focus, #tdr_nav .sf-menu li.active a:hover, #tdr_nav .sf-menu li.active a:active, #tdr_nav .sf-menu li.active span:focus, #tdr_nav .sf-menu li.active span:hover, #tdr_nav .sf-menu li.active span:active {
+  #tdr_nav #tdr_nav_list li:hover, #tdr_nav .tdr_nav_list li:hover, #tdr_nav #tdr_nav_list li.sfHover, #tdr_nav .tdr_nav_list li.sfHover, #tdr_nav #tdr_nav_list a:focus, #tdr_nav .tdr_nav_list a:focus, #tdr_nav #tdr_nav_list a:hover, #tdr_nav .tdr_nav_list a:hover, #tdr_nav #tdr_nav_list a:active, #tdr_nav .tdr_nav_list a:active, #tdr_nav #tdr_nav_list span:focus, #tdr_nav .tdr_nav_list span:focus, #tdr_nav #tdr_nav_list span:hover, #tdr_nav .tdr_nav_list span:hover, #tdr_nav #tdr_nav_list span:active, #tdr_nav .tdr_nav_list span:active, #tdr_nav #tdr_nav_list li.active a:focus, #tdr_nav .tdr_nav_list li.active a:focus, #tdr_nav #tdr_nav_list li.active a:hover, #tdr_nav .tdr_nav_list li.active a:hover, #tdr_nav #tdr_nav_list li.active a:active, #tdr_nav .tdr_nav_list li.active a:active, #tdr_nav #tdr_nav_list li.active span:focus, #tdr_nav .tdr_nav_list li.active span:focus, #tdr_nav #tdr_nav_list li.active span:hover, #tdr_nav .tdr_nav_list li.active span:hover, #tdr_nav #tdr_nav_list li.active span:active, #tdr_nav .tdr_nav_list li.active span:active, #tdr_nav .sf-menu li:hover, #tdr_nav .sf-menu li.sfHover, #tdr_nav .sf-menu a:focus, #tdr_nav .sf-menu a:hover, #tdr_nav .sf-menu a:active, #tdr_nav .sf-menu span:focus, #tdr_nav .sf-menu span:hover, #tdr_nav .sf-menu span:active, #tdr_nav .sf-menu li.active a:focus, #tdr_nav .sf-menu li.active a:hover, #tdr_nav .sf-menu li.active a:active, #tdr_nav .sf-menu li.active span:focus, #tdr_nav .sf-menu li.active span:hover, #tdr_nav .sf-menu li.active span:active {
     background: #fff; }
-  #tdr_nav .tdr_nav_list li ul, #tdr_nav .sf-menu li ul {
+  #tdr_nav #tdr_nav_list li ul, #tdr_nav .tdr_nav_list li ul, #tdr_nav .sf-menu li ul {
     border-left: solid 1px #eeeeee;
     border-top: solid 1px #eeeeee;
     margin-left: 0; }
-  #tdr_nav .tdr_nav_list li li a, #tdr_nav .tdr_nav_list li.active li a, #tdr_nav .sf-menu li li a, #tdr_nav .sf-menu li.active li a {
+  #tdr_nav #tdr_nav_list li li a, #tdr_nav .tdr_nav_list li li a, #tdr_nav #tdr_nav_list li.active li a, #tdr_nav .tdr_nav_list li.active li a, #tdr_nav .sf-menu li li a, #tdr_nav .sf-menu li.active li a {
     background: #FFF;
     border-bottom: solid 1px #eeeeee; }
-    #tdr_nav .tdr_nav_list li li a:hover, #tdr_nav .tdr_nav_list li.active li a:hover, #tdr_nav .sf-menu li li a:hover, #tdr_nav .sf-menu li.active li a:hover {
+    #tdr_nav #tdr_nav_list li li a:hover, #tdr_nav .tdr_nav_list li li a:hover, #tdr_nav #tdr_nav_list li.active li a:hover, #tdr_nav .tdr_nav_list li.active li a:hover, #tdr_nav .sf-menu li li a:hover, #tdr_nav .sf-menu li.active li a:hover {
       background-color: #fbfbfb; }
   #tdr_nav .navbar-nav > li:last-child a {
     border-right: 1px solid #ECECEC; }
@@ -898,23 +898,23 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
     display: none; }
   #tdr_side_nav ul {
     list-style: none; }
-  #tdr_side_nav .tdr_nav_list {
+  #tdr_side_nav #tdr_nav_list, #tdr_side_nav .tdr_nav_list {
     padding: 0; }
-    #tdr_side_nav .tdr_nav_list > li {
+    #tdr_side_nav #tdr_nav_list > li, #tdr_side_nav .tdr_nav_list > li {
       border-bottom: 1px solid #ccc; }
-    #tdr_side_nav .tdr_nav_list li {
+    #tdr_side_nav #tdr_nav_list li, #tdr_side_nav .tdr_nav_list li {
       margin: 0;
       padding: 10px; }
-      #tdr_side_nav .tdr_nav_list li a {
+      #tdr_side_nav #tdr_nav_list li a, #tdr_side_nav .tdr_nav_list li a {
         margin: 0px;
         display: block;
         width: 100%;
         height: 100%; }
-      #tdr_side_nav .tdr_nav_list li.sfHover {
+      #tdr_side_nav #tdr_nav_list li.sfHover, #tdr_side_nav .tdr_nav_list li.sfHover {
         background-color: #fff; }
-      #tdr_side_nav .tdr_nav_list li:hover {
+      #tdr_side_nav #tdr_nav_list li:hover, #tdr_side_nav .tdr_nav_list li:hover {
         background-color: #fff; }
-    #tdr_side_nav .tdr_nav_list ul {
+    #tdr_side_nav #tdr_nav_list ul, #tdr_side_nav .tdr_nav_list ul {
       margin-top: 5px;
       padding: 0; }
 
@@ -1107,27 +1107,25 @@ div.styled
 .breadcrumb {
   font-size: 11px; }
 
-#tdr_crumbs {
-  background: #fff; }
-  #tdr_crumbs ul {
-    list-style: none;
-    margin-bottom: 0;
-    padding: 1em 0 0;
-    margin-left: 0; }
-  #tdr_crumbs li {
-    color: #666;
-    display: inline;
-    font-size: 80%;
-    line-height: 1;
-    list-style: none;
-    margin-left: 0;
-    text-transform: capitalize; }
-    #tdr_crumbs li a {
-      background: url(img/sprite_icon.png) no-repeat scroll right 5px transparent;
-      padding-right: .8em;
-      text-decoration: none; }
-      #tdr_crumbs li a:hover {
-        text-decoration: underline; }
+#tdr_crumbs ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 1em 0 0;
+  margin-left: 0; }
+#tdr_crumbs li {
+  color: #666;
+  display: inline;
+  font-size: 80%;
+  line-height: 1;
+  list-style: none;
+  margin-left: 0;
+  text-transform: capitalize; }
+  #tdr_crumbs li a {
+    background: url(img/sprite_icon.png) no-repeat scroll right 5px transparent;
+    padding-right: .8em;
+    text-decoration: none; }
+    #tdr_crumbs li a:hover {
+      text-decoration: underline; }
 
 /**********************************************************************
  * footer style

@@ -109,7 +109,7 @@ body {
   }
 }
 
-.tdr_nav_list {
+#tdr_nav_list,.tdr_nav_list {
   margin: 0;
 }
 
@@ -160,12 +160,12 @@ body {
     border-color: #d9d9d9;
   }
 
-  .tdr_nav_list, .tdr_nav_list *,.sf-menu,.sf-menu * {
+  #tdr_nav_list, .tdr_nav_list, #tdr_nav_list *, .tdr_nav_list *, .sf-menu,.sf-menu * {
     padding: 0;
     list-style: none;
   }
 
-  .tdr_nav_list {
+  #tdr_nav_list, .tdr_nav_list {
     width: 95%;
 
     @media only screen and (max-width: $desktop-small) {
@@ -189,7 +189,7 @@ body {
     }
   }
 
-  .tdr_nav_list ul {
+  #tdr_nav_list ul, .tdr_nav_list ul {
     display: none;
 
     @media only screen and (min-width: $desktop-small) {
@@ -197,35 +197,35 @@ body {
     }
   }
 
-  .tdr_nav_list li:hover,.sf-menu li:hover {
+  #tdr_nav_list li:hover, .tdr_nav_list li:hover, .sf-menu li:hover {
     visibility: inherit;
   }
 
-  .tdr_nav_list li,.sf-menu li {
+  #tdr_nav_list li, .tdr_nav_list li, .sf-menu li {
     @media only screen and (min-width: $desktop-small) {
       float: left;
     }
   }
 
-  .tdr_nav_list a,.tdr_nav_list span,.sf-menu a,.sf-menu span {
+  #tdr_nav_list a, .tdr_nav_list a, #tdr_nav_list span, .tdr_nav_list span, .sf-menu a,.sf-menu span {
     display: block;
     white-space: nowrap;
   }
 
-  .tdr_nav_list li:hover ul,.tdr_nav_list li.sfHover ul,.sf-menu li:hover ul,.sf-menu li.sfHover ul {
+  #tdr_nav_list li:hover ul, .tdr_nav_list li:hover ul, #tdr_nav_list li.sfHover ul, .tdr_nav_list li.sfHover ul, .sf-menu li:hover ul,.sf-menu li.sfHover ul {
     z-index: 999;
   }
 
-  .tdr_nav_list li li,.sf-menu li li {
+  #tdr_nav_list li li, .tdr_nav_list li li, .sf-menu li li {
     float: none;
     _margin-bottom: -17px;
   }
 
-  .tdr_nav_list span,.sf-menu span {
+  #tdr_nav_list span, .tdr_nav_list span, .sf-menu span {
     cursor: default;
   }
 
-  .tdr_nav_list a,.tdr_nav_list span,.sf-menu a,.sf-menu span {
+  #tdr_nav_list a, .tdr_nav_list a, #tdr_nav_list span, .tdr_nav_list span, .sf-menu a,.sf-menu span {
     background-color: #FDFDFD;
     border-bottom: solid 3px rgba(255, 255, 255, 0.4);
     border-right: solid 1px #eeeeee;
@@ -235,27 +235,27 @@ body {
     text-decoration: none;
   }
 
-  .tdr_nav_list > li.sfHover > a {
+  #tdr_nav_list > li.sfHover > a, .tdr_nav_list > li.sfHover > a {
     border-bottom: solid 3px #9FB3BF;
   }
 
-  .tdr_nav_list li.active>a,.tdr_nav_list li.active>span,.sf-menu li.active>a,.sf-menu li.active>span {
+  #tdr_nav_list li.active>a, .tdr_nav_list li.active>a, #tdr_nav_list li.active>span, .tdr_nav_list li.active>span, .sf-menu li.active>a,.sf-menu li.active>span {
     background-color: #FDFDFD;
     border-bottom: #D56A03 solid 3px;
   }
 
-  .tdr_nav_list li:hover,.tdr_nav_list li.sfHover,.tdr_nav_list a:focus,.tdr_nav_list a:hover,.tdr_nav_list a:active,.tdr_nav_list span:focus,.tdr_nav_list span:hover,.tdr_nav_list span:active,.tdr_nav_list li.active a:focus,.tdr_nav_list li.active a:hover,.tdr_nav_list li.active a:active,.tdr_nav_list li.active span:focus,.tdr_nav_list li.active span:hover,.tdr_nav_list li.active span:active,.sf-menu li:hover,.sf-menu li.sfHover,.sf-menu a:focus,.sf-menu a:hover,.sf-menu a:active,.sf-menu span:focus,.sf-menu span:hover,.sf-menu span:active,.sf-menu li.active a:focus,.sf-menu li.active a:hover,.sf-menu li.active a:active,.sf-menu li.active span:focus,.sf-menu li.active span:hover,.sf-menu li.active span:active
+  #tdr_nav_list li:hover,.tdr_nav_list li:hover,#tdr_nav_list li.sfHover,.tdr_nav_list li.sfHover,#tdr_nav_list a:focus,.tdr_nav_list a:focus,#tdr_nav_list a:hover,.tdr_nav_list a:hover,#tdr_nav_list a:active,.tdr_nav_list a:active,#tdr_nav_list span:focus,.tdr_nav_list span:focus,#tdr_nav_list span:hover,.tdr_nav_list span:hover,#tdr_nav_list span:active,.tdr_nav_list span:active,#tdr_nav_list li.active a:focus,.tdr_nav_list li.active a:focus,#tdr_nav_list li.active a:hover,.tdr_nav_list li.active a:hover,#tdr_nav_list li.active a:active,.tdr_nav_list li.active a:active,#tdr_nav_list li.active span:focus,.tdr_nav_list li.active span:focus,#tdr_nav_list li.active span:hover,.tdr_nav_list li.active span:hover,#tdr_nav_list li.active span:active,.tdr_nav_list li.active span:active,.sf-menu li:hover,.sf-menu li.sfHover,.sf-menu a:focus,.sf-menu a:hover,.sf-menu a:active,.sf-menu span:focus,.sf-menu span:hover,.sf-menu span:active,.sf-menu li.active a:focus,.sf-menu li.active a:hover,.sf-menu li.active a:active,.sf-menu li.active span:focus,.sf-menu li.active span:hover,.sf-menu li.active span:active
   {
     background: #fff;
   }
 
-  .tdr_nav_list li ul,.sf-menu li ul {
+  #tdr_nav_list li ul,.tdr_nav_list li ul,.sf-menu li ul {
     border-left: solid 1px #eeeeee;
     border-top: solid 1px #eeeeee;
     margin-left: 0;
   }
 
-  .tdr_nav_list li li a,.tdr_nav_list li.active li a,.sf-menu li li a,.sf-menu li.active li a {
+  #tdr_nav_list li li a,.tdr_nav_list li li a,#tdr_nav_list li.active li a,.tdr_nav_list li.active li a,.sf-menu li li a,.sf-menu li.active li a {
     background: #FFF;
     border-bottom: solid 1px #eeeeee;
 
@@ -357,7 +357,7 @@ body {
 
   }
 
-  .tdr_nav_list {
+  #tdr_nav_list,.tdr_nav_list {
     padding: 0;
 
     > li {
