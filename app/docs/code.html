@@ -96,9 +96,11 @@
 <div id="tdr_crumbs">
     <div id="tdr_crumbs_content">
         <ul id="tdr_crumbs_list">
-            <li><a href="#">HOME</a>&#160;</li>
-            &nbsp;
-            <li>Kitchen Sink</li>
+            <li><a href="#">HOME</a></li>
+            &#160;&nbsp;
+            <li><a href="index.html">Kitchen Sink</a></li>
+            &#160;&nbsp;
+            <li>Code</li>
         </ul>
     </div>
 </div>
@@ -110,34 +112,37 @@
 
 <div class="main-content" role="main">
 
+
+
 <div class="alert alert-danger"><p>Work in progress. Do not use in production.</p></div>
 
-    <!-- Alerts
+    <!-- Code
     ================================================== -->
     <div class="bs-docs-section">
-        <h1 class="page-header">Kitchen Sink Components</h1>
+        <h1 id="code" class="page-header">Code</h1>
 
-        <ul>
-            <li><a href="alerts.html">Alerts</a></li>
-            <li><a href="badges.html">Badges</a></li>
-            <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
-            <li><a href="buttons.html">Buttons</a></li>
-            <li><a href="button_dropdowns.html">Button Dropdowns</a></li>
-            <li><a href="code.html">Code</a></li>
-            <li><a href="dropdowns.html">Dropdowns</a></li>
-            <li><a href="equal_column_layout.html">Equal Column Layout</a></li>
-            <li><a href="forms.html">Forms</a></li>
-            <li><a href="helper_classes.html">Helper classes</a></li>
-            <li><a href="icons.html">Icons</a></li>
-            <li><a href="images.html">Images</a></li>
-            <li><a href="input_groups.html">Input Groups</a></li>
-            <li><a href="javascript_components.html">Javascript Components</a></li>
-            <li><a href="pagination.html">Pagination</a></li>
-            <li><a href="panels.html">Panels</a></li>
-            <li><a href="progress_bars.html">Progress Bars</a></li>
-            <li><a href="tables.html">Tables</a></li>
-            <li><a href="typography.html">Typography</a></li>
-        </ul>
+        <h2 id="code-inline">Inline</h2>
+        <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+        <div class="bs-example">
+            For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+        </div>
+        <div class="highlight"><pre><code class="html">For example, <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> should be wrapped as inline.</code></pre></div>
+
+        <h2 id="code-user-input">User input</h2>
+        <p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
+        <div class="bs-example">
+            To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
+        </div>
+        <div class="highlight"><pre><code class="html">To switch directories, type <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> followed by the name of the directory.</code></pre></div>
+
+        <h2 id="code-block">Basic block</h2>
+        <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+        <div class="bs-example">
+            <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+        </div>
+        <div class="highlight"><pre><code class="html"><span class="nt">&lt;pre&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span><span class="nt">&lt;/pre&gt;</span></code></pre></div>
+
+        <p>You may optionally add the <code>.pre-scrollable</code> class, which will set a max-height of 350px and provide a y-axis scrollbar.</p>
     </div>
 
 
@@ -199,8 +204,8 @@
                             <li><a href="#btn-dropdowns-dropup">Dropup variation</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="code.html">Code</a>
+                    <li class="active">
+                        Code
                         <ul class="nav">
                             <li><a href="#code-inline">Inline code</a></li>
                             <li><a href="#code-user-input">User input</a></li>
@@ -412,9 +417,7 @@
                 <li><a href="../form-a.html">Basic Form</a></li>
             </ul>
         </li>
-        <li class="active">
-            <a href="index.html">CMS Kitchen Sink</a>
-        </li>
+        <li class="active"><a href="index.html">Kitchen Sink</a></li>
     </ul>
 </nav>
 </div>

@@ -61,7 +61,7 @@ module.exports = function (grunt) {
                     '<%= config.app %>/{,*/}*.html',
                     '<%= config.app %>/{,*/}*.css',
                     '.tmp/styles/{,*/}*.css',
-                    '<%= config.app %>/_images/{,*/}*'
+                    '<%= config.app %>/img/{,*/}*'
                 ]
             }
         },
@@ -69,7 +69,8 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     '<%= config.app %>/styles/base.css': '<%= config.app %>/styles/base.scss',
-                    '<%= config.app %>/styles/cms.css': '<%= config.app %>/styles/cms.scss'
+                    '<%= config.app %>/styles/cms.css': '<%= config.app %>/styles/cms.scss',
+                    '<%= config.app %>/styles/homepage-wide.css': '<%= config.app %>/styles/homepage-wide.scss'
                 },
                 options: {
                     sourcemap: 'true'
@@ -157,20 +158,20 @@ module.exports = function (grunt) {
             options: {
                 sassDir: '<%= config.app %>/styles',
                 cssDir: '.tmp/styles',
-                generatedImagesDir: '.tmp/_images/generated',
-                imagesDir: '<%= config.app %>/_images',
+                generatedImagesDir: '.tmp/img/generated',
+                imagesDir: '<%= config.app %>/img',
                 javascriptsDir: '<%= config.app %>/scripts',
                 fontsDir: '<%= config.app %>/styles/fonts',
                 importPath: '<%= config.app %>/vendor',
-                httpImagesPath: '/_images',
-                httpGeneratedImagesPath: '/_images/generated',
+                httpImagesPath: '/img',
+                httpGeneratedImagesPath: '/img/generated',
                 httpFontsPath: '/styles/fonts',
                 relativeAssets: false,
                 assetCacheBuster: false
             },
             dist: {
                 options: {
-                    generatedImagesDir: '<%= config.dist %>/_images/generated'
+                    generatedImagesDir: '<%= config.dist %>/img/generated'
                 }
             },
             server: {
@@ -215,7 +216,7 @@ module.exports = function (grunt) {
                     src: [
                         '<%= config.dist %>/scripts/{,*/}*.js',
                         '<%= config.dist %>/styles/{,*/}*.css',
-                        '<%= config.dist %>/_images/{,*/}*.*',
+                        '<%= config.dist %>/img/{,*/}*.*',
                         '<%= config.dist %>/styles/fonts/{,*/}*.*',
                         '<%= config.dist %>/*.{ico,png}'
                     ]
@@ -230,13 +231,13 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= config.dist %>'
             },
-            html: '<%= config.app %>/index.html'
+            html: ['<%= config.app %>/index.html','<%= config.app %>/homepage-wide.html']
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/_images']
+                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/img']
             },
             html: ['<%= config.dist %>/{,*/}*.html'],
             css: ['<%= config.dist %>/styles/{,*/}*.css']
@@ -247,9 +248,9 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= config.app %>/_images',
+                    cwd: '<%= config.app %>/img',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= config.dist %>/_images'
+                    dest: '<%= config.dist %>/img'
                 }]
             },
             cssImages: {
@@ -266,9 +267,9 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= config.app %>/_images',
+                    cwd: '<%= config.app %>/img',
                     src: '{,*/}*.svg',
-                    dest: '<%= config.dist %>/_images'
+                    dest: '<%= config.dist %>/img'
                 }]
             }
         },
@@ -330,7 +331,7 @@ module.exports = function (grunt) {
                     dest: '<%= config.dist %>',
                     src: [
                         '*.{ico,png,txt}',
-                        '_images/{,*/}*.webp',
+                        'img/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
                         'docs/{,*/}*.css', //for the kitchen sink...
