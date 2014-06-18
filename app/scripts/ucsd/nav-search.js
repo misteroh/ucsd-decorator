@@ -6,6 +6,7 @@ $(document).ready(function() {
         $topNav = $('#tdr_nav'),
         $window = $(window),
         $search = $topNav.find('.tdr_search'),
+        $searchBtn = $topNav.find('.btn-default'),
         $navList = $('.tdr_nav_list'),
 
     /* do we have a nav menu? */
@@ -30,6 +31,10 @@ $(document).ready(function() {
     /* search link */
     $("#tdr_search_toggle").click(function(event) {
         $search.toggleClass("show");
+    });
+
+    $("#tdr_search_toggle").click(function(event) {
+        $searchBtn.toggleClass("btn-s");
     });
 
     $(".navbar-toggle").on("click", function() {
