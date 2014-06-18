@@ -739,7 +739,7 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
     #tdr_nav {
       display: block;
       margin-bottom: 0;
-      background-color: #FDFDFD;
+      background-color: #F2F5F7;
       border: 0;
       min-height: 34px;
       border-bottom: 1px solid #eeeeee; } }
@@ -922,8 +922,8 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
  * CSS Styling for the page nav aside
  */
 div.styled {
-  background: #FDFDFD;
-  border: 1px solid #eeeeee;
+  background: #F2F5F7;
+  border: 1px solid #C8CFD3;
   margin-bottom: 1em;
   padding: 1em; }
   div.styled h2, div.styled h3, div.styled h4, div.styled h5, div.styled h6 {
@@ -940,7 +940,7 @@ div.styled
   padding: 0; }
   div.styled
   #page_nav li {
-    border-top: 1px solid #F8F8F8;
+    border-top: 1px solid #C8CFD3;
     color: #06c;
     list-style: none;
     margin: 0;
@@ -990,7 +990,17 @@ div.styled
   background: none;
   border: none;
   outline: 0;
-  max-height: 35px; }
+  max-height: 35px;
+   }
+  .btn-s {
+      border: solid #ccc !important;
+      border-width: 0 1px !important;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition-delay: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+  }
   .lt-ie8 #tdr_search_toggle {
     padding: 8px 6px 8px 13px;
     background-image: url(img/search.png);
@@ -1006,6 +1016,7 @@ div.styled
   .tdr_search .dropdown-menu {
     width: 150px; } }
 .tdr_search .search-scope {
+  height: 27px;
   max-width: 99px;
   font-size: 11px;
   padding: 4px 2px 4px 0;
@@ -1031,11 +1042,14 @@ div.styled
     right: 0;
     top: 35px;
     float: left;
-    width: 520px;
-    padding: 15px;
-    background-color: #c6d3da;
+    width: 385px;
+    padding: 10px;
+    background-color: #DFE2E4;
     border: 0;
     box-shadow: 0;
+    border: solid #ccc;
+    border-width: 0 1px 2px 1px;
+    border-radius: 3px 0 3px 3px;
     background-clip: padding-box; }
   #tdr_nav .tdr_search.show #tdr_search_toggle {
     background-color: #c6d3da;
@@ -1061,8 +1075,8 @@ div.styled
   -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease; }
 .csstransitions #tdr_nav .tdr_search.show #tdr_search_toggle {
-  background-color: #c6d3da;
-  color: #fff;
+  background-color: #DFE2E4;
+  color: #004b6e;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -ms-transition-delay: all 0.25s ease;
@@ -1076,7 +1090,7 @@ div.styled
   -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease; }
 #tdr_nav .input-group {
-  width: 360px; }
+  width: 250px; }
 
 #tdr_side_nav .tdr_search {
   padding: 7px;
