@@ -1074,7 +1074,7 @@ div.styled
   -ms-transition-delay: background-color 0.25s ease;
   -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease; }
-.csstransitions #tdr_nav .tdr_search.show #tdr_search_toggle {
+.csstransitions #tdr_nav .tdr_search.show #tdr_search_toggle{
   background-color: #DFE2E4;
   color: #004b6e;
   -webkit-transition: all 0.25s ease;
