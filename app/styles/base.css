@@ -992,6 +992,16 @@ div.styled
   outline: 0;
   max-height: 35px;
    }
+.btn:active, .btn.active {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+button#tdr_search_toggle {
+    border: solid #F2F5F7;
+    border-width: 0 1px 0 1px;
+}
+
   .btn-s {
       border: solid #ccc !important;
       border-width: 0 1px !important;
@@ -1088,7 +1098,7 @@ div.styled
   -moz-transition: background-color 0.25s ease;
   -ms-transition-delay: background-color 0.25s ease;
   -o-transition: background-color 0.25s ease;
-  transition: background-color 0.25s ease; }
+  transition: all 0.25s ease; }
 #tdr_nav .input-group {
   width: 250px; }
 
