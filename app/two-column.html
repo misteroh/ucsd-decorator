@@ -90,7 +90,7 @@
                     </button>
 
                     <div id="tdr_search_content">
-                        <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get">
+                        <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
                             <select class="search-scope" name="search-scope">
                                 <option selected="selected" value="cwo">This Site</option>
                                 <option value="default_collection">All UCSD Sites</option>
@@ -98,7 +98,7 @@
                             </select>
 
                             <div class="input-group">
-                                <input type="search" placeholder="Search..." class="form-control">
+                                <input placeholder="Search..." type="search" class="form-control" class="search-term" id="q" name="search-term">
                             </div>
                         </form>
                     </div>
@@ -127,23 +127,27 @@
                     <div class="styled">
 
                         <h2 id="page_nav_title">
-                            CMS Kitchen Sink
+                            Navigation
                         </h2>
 
                         <ul id="page_nav">
                             <li class="">
-                                <a href="index.html">Home</a>
+                                <a href="#">Nav Link 1</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Nav Link 2</a>
                             </li>
                             <li class="expanded active">
-                                Templates
+                                Styles
                                 <ul>
-                                    <li><a href="blank-slate.html">Blank Slate</a></li>
-                                    <li><a href="two-column.html">Two Column</a></li>
-                                    <li><a href="three-column.html">Three Column</a></li>
-                                    <li><a href="form-a.html">Basic Form</a></li>
+                                    <li><a href="#">Sub 1</a></li>
+                                    <li><a href="#">Sub 2</a></li>
+                                    <li><a href="#">Sub 3</a></li>
                                 </ul>
                             </li>
-                            <li class=""><a href="docs/index.html">CMS Kitchen Sink</a></li>
+                            <li class="">
+                                <a href="#">Nav Link</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -177,34 +181,7 @@
 
     <nav id="tdr_side_nav" class="navbar nav-offcanvas" role="navigation">
         <div class="tdr_search clearfix">
-            <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get">
-                <select class="search-scope" name="search-scope">
-                    <option selected="selected" value="cwo">This Site</option>
-                    <option value="default_collection">All UCSD Sites</option>
-                    <option value="faculty-staff">Faculty/Staff</option>
-                </select>
-
-                <div class="input-group">
-                    <input placeholder="Search..." type="search" class="form-control">
-                </div>
-            </form>
         </div>
-
-        <ul class="tdr_nav_list">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li class="active">
-                <a href="#">Templates<b class="caret"></b></a>
-                <ul>
-                    <li><a href="blank-slate.html">Blank Slate</a></li>
-                    <li><a class="active" href="two-column.html">Two Column</a></li>
-                    <li><a href="three-column.html">Three Column</a></li>
-                    <li><a href="form-a.html">Basic Form</a></li>
-                </ul>
-            </li>
-            <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
-        </ul>
     </nav>
 </div>
 
@@ -265,6 +242,22 @@
 <script src="scripts/ucsd/flexslider-init.js"></script>
 <script src="scripts/ucsd/drawer.js"></script>
 <!-- endbuild -->
+
+<!-- Google Search -->
+<script src="http://www.google.com/jsapi" type="text/javascript">// <![CDATA[
+// ]]></script>
+<script type="text/javascript">// <![CDATA[
+google.load('search', '1');
+google.setOnLoadCallback(function() {
+    google.search.CustomSearchControl.attachAutoCompletion(
+            '004685874581245502426:palsaetk1kk',
+            document.getElementById('q'),
+            'cse-site-search');
+});
+// ]]></script>
+<script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript">// <![CDATA[
+
+// ]]></script>
 
 </body>
 </html>
