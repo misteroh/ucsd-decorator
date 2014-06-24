@@ -327,7 +327,7 @@ body {
         @include menu-transition(4px, 45deg);
       }
 
-      @media only screen and (-webkit-min-device-pixel-ratio:3) {
+      @media only screen and (aspect-ratio: 3/5), screen and (aspect-ratio: 9/16) {
         &:nth-child(2) {
           @include menu-transition(8px, 45deg);
         }
