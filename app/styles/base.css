@@ -865,11 +865,18 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
   html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar {
     background-color: #fff; }
     html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar:nth-child(2) {
-      -webkit-transform: translate3d(0, 8px, 0) rotateZ(45deg);
-      -moz-transform: translate3d(0, 8px, 0) rotateZ(45deg);
-      -ms-transform: translate3d(0, 8px, 0) rotateZ(45deg);
-      -o-transform: translate3d(0, 8px, 0) rotateZ(45deg);
-      transform: translate3d(0, 8px, 0) rotateZ(45deg); }
+      -webkit-transform: translate3d(0, 4px, 0) rotateZ(45deg);
+      -moz-transform: translate3d(0, 4px, 0) rotateZ(45deg);
+      -ms-transform: translate3d(0, 4px, 0) rotateZ(45deg);
+      -o-transform: translate3d(0, 4px, 0) rotateZ(45deg);
+      transform: translate3d(0, 4px, 0) rotateZ(45deg); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+      html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar:nth-child(2) {
+        -webkit-transform: translate3d(0, 8px, 0) rotateZ(45deg);
+        -moz-transform: translate3d(0, 8px, 0) rotateZ(45deg);
+        -ms-transform: translate3d(0, 8px, 0) rotateZ(45deg);
+        -o-transform: translate3d(0, 8px, 0) rotateZ(45deg);
+        transform: translate3d(0, 8px, 0) rotateZ(45deg); } }
     html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar:nth-child(3) {
       opacity: 0; }
     html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar:nth-child(4) {

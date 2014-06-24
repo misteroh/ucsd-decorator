@@ -77,8 +77,10 @@
                 <ul>
                     <li><a href="blank-slate.html">Blank Slate</a></li>
                     <li><a href="two-column.html">Two Column</a></li>
+                    <li><a href="two-column-b.html">Two Column B</a></li>
                     <li><a href="three-column.html">Three Column</a></li>
                     <li><a href="form-a.html">Basic Form</a></li>
+                    <li><a href="homepage-wide.html">Homepage Wide</a></li>
                 </ul>
             </li>
             <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
@@ -150,18 +152,16 @@
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+<script src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
 
-<script type="text/javascript">
-    (function($) {
-        $(document).ready(function() {
-            initFooter("http://act.ucsd.edu/cwp/feedback/tool/cwo");
-            initCopyright();
-        });
-    })(jQuery);
+<script>
+    $(document).ready(function() {
+        initFooter("http://act.ucsd.edu/cwp/feedback/tool/cwo");
+        initCopyright();
+    });
 </script>
 
-<script type="text/javascript">
+<script>
     // <![CDATA[
     var _gaq = _gaq || [];
     _gaq.push(["_setAccount", "UA-3409104-9"]);
@@ -208,9 +208,9 @@
 <!-- endbuild -->
 
 <!-- Google Search -->
-<script src="http://www.google.com/jsapi" type="text/javascript">// <![CDATA[
+<script src="http://www.google.com/jsapi">// <![CDATA[
 // ]]></script>
-<script type="text/javascript">// <![CDATA[
+<script>// <![CDATA[
 google.load('search', '1');
 google.setOnLoadCallback(function() {
     google.search.CustomSearchControl.attachAutoCompletion(
@@ -219,7 +219,7 @@ google.setOnLoadCallback(function() {
             'cse-site-search');
 });
 // ]]></script>
-<script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript">// <![CDATA[
+<script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en">// <![CDATA[
 
 // ]]></script>
 
