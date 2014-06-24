@@ -46,6 +46,10 @@ $(document).ready(function() {
             $('.nav-offcanvas>.tdr_search>form').appendTo($('#tdr_search_content'));
             $('#tdr_side_nav>.tdr_nav_list').prependTo('#tdr_nav_content');
         }
+        /* init nav menu */
+        $navList.superfish({
+            cssArrows: false
+        });
     });
 
     function navMover() {
@@ -58,6 +62,10 @@ $(document).ready(function() {
                 } else {
                     $('.nav-offcanvas>.tdr_search>form').appendTo($('#tdr_search_content'));
                     $('#tdr_side_nav>.tdr_nav_list').prependTo('#tdr_nav_content');
+                    /* init nav menu */
+                    $navList.superfish({
+                        cssArrows: false
+                    });
                 }
 
             }
@@ -76,6 +84,6 @@ $(document).ready(function() {
 
     }
 
-    FastClick.attach(document.body);
+    //FastClick.attach(document.body);
     $window.on('load orientationchange resize', navMover);
 });

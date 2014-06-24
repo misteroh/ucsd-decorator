@@ -911,12 +911,13 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
       border-bottom: 1px solid #ccc; }
     #tdr_side_nav #tdr_nav_list li, #tdr_side_nav .tdr_nav_list li {
       margin: 0;
-      padding: 10px; }
+      padding-left: 10px; }
       #tdr_side_nav #tdr_nav_list li a, #tdr_side_nav .tdr_nav_list li a {
         margin: 0px;
         display: block;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        padding: 10px; }
       #tdr_side_nav #tdr_nav_list li.sfHover, #tdr_side_nav .tdr_nav_list li.sfHover {
         background-color: #fff; }
       #tdr_side_nav #tdr_nav_list li:hover, #tdr_side_nav .tdr_nav_list li:hover {
