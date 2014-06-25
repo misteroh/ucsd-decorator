@@ -865,18 +865,18 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
   html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar {
     background-color: #fff; }
     html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar:nth-child(2) {
-      -webkit-transform: translate3d(0, 4px, 0) rotateZ(45deg);
-      -moz-transform: translate3d(0, 4px, 0) rotateZ(45deg);
-      -ms-transform: translate3d(0, 4px, 0) rotateZ(45deg);
-      -o-transform: translate3d(0, 4px, 0) rotateZ(45deg);
-      transform: translate3d(0, 4px, 0) rotateZ(45deg); }
-    @media only screen and (device-aspect-ratio: 40 / 71) and (orientation: landscape), screen and (device-aspect-ratio: 9 / 16), screen and (device-aspect-ratio: 16 / 9), screen and (device-aspect-ratio: 25 / 38) {
+      -webkit-transform: translate3d(0, 8px, 0) rotateZ(45deg);
+      -moz-transform: translate3d(0, 8px, 0) rotateZ(45deg);
+      -ms-transform: translate3d(0, 8px, 0) rotateZ(45deg);
+      -o-transform: translate3d(0, 8px, 0) rotateZ(45deg);
+      transform: translate3d(0, 8px, 0) rotateZ(45deg); }
+    @media only screen and (device-aspect-ratio: 40 / 71) and (orientation: portrait), screen and (device-aspect-ratio: 320 / 533), screen and (device-aspect-ratio: 2 / 3) {
       html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar:nth-child(2) {
-        -webkit-transform: translate3d(0, 8px, 0) rotateZ(45deg);
-        -moz-transform: translate3d(0, 8px, 0) rotateZ(45deg);
-        -ms-transform: translate3d(0, 8px, 0) rotateZ(45deg);
-        -o-transform: translate3d(0, 8px, 0) rotateZ(45deg);
-        transform: translate3d(0, 8px, 0) rotateZ(45deg); } }
+        -webkit-transform: translate3d(0, 4px, 0) rotateZ(45deg);
+        -moz-transform: translate3d(0, 4px, 0) rotateZ(45deg);
+        -ms-transform: translate3d(0, 4px, 0) rotateZ(45deg);
+        -o-transform: translate3d(0, 4px, 0) rotateZ(45deg);
+        transform: translate3d(0, 4px, 0) rotateZ(45deg); } }
     html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar:nth-child(3) {
       opacity: 0; }
     html.csstransforms3d.csstransitions .active .navbar-toggle .icon-bar:nth-child(4) {
