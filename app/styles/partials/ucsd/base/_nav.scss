@@ -324,12 +324,12 @@ body {
       background-color: #fff;
 
       &:nth-child(2) {
-        @include menu-transition(8px, 45deg);
+        @include menu-transition(4px, 45deg);
       }
 
-      @media only screen and (device-aspect-ratio: 40/71) and (orientation: portrait),screen and (device-aspect-ratio: 320/533),screen and (device-aspect-ratio: 2/3) {
+      @media only screen and (aspect-ratio: 3/5), screen and (aspect-ratio: 9/16) {
         &:nth-child(2) {
-          @include menu-transition(4px, 45deg);
+          @include menu-transition(8px, 45deg);
         }
       }
 
