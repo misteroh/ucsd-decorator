@@ -900,7 +900,8 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
 #tdr_side_nav {
   margin: 0;
   padding: 0;
-  border: none; }
+  border: none;
+  overflow-y: scroll; }
   .lt-ie8 #tdr_side_nav {
     display: none; }
   #tdr_side_nav ul {
