@@ -353,6 +353,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+  overflow-y: scroll;
 
   .lt-ie8 & {
     display: none;
