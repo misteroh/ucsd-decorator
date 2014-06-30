@@ -470,7 +470,9 @@ div.field,div.field_top,div.field_left,div.label {
 	clear: both;
 	padding-bottom: 1em;
 }
-
+div.label {
+  color:#000;
+}
 .field_top div.label {
 	padding-bottom: .25em;
 }
