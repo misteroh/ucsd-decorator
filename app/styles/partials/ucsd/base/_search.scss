@@ -2,7 +2,8 @@
 	border-radius : 0;
 	padding: 8px;
 	background: none;
-	border: none;
+    border: 1px solid transparent;
+    border-width: 0 1px 0 1px;
 	outline: 0;
 	max-height: $nav-height;
 
@@ -16,6 +17,11 @@
 	.lt-ie8 .show & {
 		background-image: url(img/search-teal.png);
 	}
+}
+
+.btn-s {
+  border: solid #ccc !important;
+  border-width: 0 1px !important;
 }
 
 .tdr_search { //common styling to both search forms
@@ -165,12 +171,6 @@
 				margin-left: 4px;
 			}
 		}
-
-      .btn-s {
-        border: solid #ccc !important;
-        border-width: 0 1px !important;
-      }
-
 	.form-control {
 		padding: 6px;
 
@@ -178,6 +178,8 @@
 			width: 96%;
 		}
 	}
+
+
 
 	.input-group {
 		width: 54%;
