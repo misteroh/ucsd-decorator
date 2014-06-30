@@ -125,7 +125,7 @@ body {
   @media screen and (min-width: $desktop-small) {
     display: block;
     margin-bottom: 0;
-    background-color: #FDFDFD;
+    background-color: #F2F5F7;
     border: 0;
     min-height: 34px;
     border-bottom: 1px solid #eeeeee;
@@ -324,12 +324,12 @@ body {
       background-color: #fff;
 
       &:nth-child(2) {
-        @include menu-transition(4px, 45deg);
+        @include menu-transition(8px, 45deg);
       }
 
-      @media only screen and (aspect-ratio: 3/5), screen and (aspect-ratio: 9/16) {
+      @media only screen and (device-aspect-ratio: 40/71) and (orientation: portrait),screen and (device-aspect-ratio: 320/533),screen and (device-aspect-ratio: 2/3) {
         &:nth-child(2) {
-          @include menu-transition(8px, 45deg);
+          @include menu-transition(4px, 45deg);
         }
       }
 
@@ -404,8 +404,8 @@ body {
  */
 
 div.styled {
-  background: #FDFDFD;
-  border: 1px solid #eeeeee;
+  background: #F2F5F7;
+  border: 1px solid #C8CFD3;
   margin-bottom: 1em;
   padding: 1em;
 
@@ -434,7 +434,7 @@ div.styled
   padding: 0;
 
   li {
-    border-top: 1px solid #F8F8F8;
+    border-top: 1px solid #DBD7D7;
     color: #06c;
     list-style: none;
     margin: 0;
