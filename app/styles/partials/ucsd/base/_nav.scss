@@ -102,7 +102,7 @@ body {
 }
 
 .navbar {
-  z-index: 1;
+  z-index: 100;
 
   .active {
     background-color: #FFFFFF;
@@ -327,6 +327,12 @@ body {
         @include menu-transition(8px, 45deg);
       }
 
+      @media only screen and (device-aspect-ratio: 40/71) and (orientation: portrait),screen and (device-aspect-ratio: 320/533),screen and (device-aspect-ratio: 2/3) {
+        &:nth-child(2) {
+          @include menu-transition(4px, 45deg);
+        }
+      }
+
       &:nth-child(3) {
         opacity: 0;
       }
@@ -347,6 +353,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+  overflow-y: scroll;
 
   .lt-ie8 & {
     display: none;
@@ -366,13 +373,14 @@ body {
 
     li {
       margin: 0;
-      padding: 10px;
+      padding-left: 10px;
 
       a {
         margin: 0px;
         display: block;
         width: 100%;
         height: 100%;
+        padding: 10px;
       }
 
       &.sfHover {
