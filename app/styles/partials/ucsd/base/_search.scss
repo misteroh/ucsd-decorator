@@ -39,6 +39,7 @@
 		font-size: 11px;
 		padding: 4px 2px 4px 0;
 		float: left;
+        height: 27px;
 	}
 
 	.input-group {
@@ -72,10 +73,12 @@
 			right: 0;
 			top: $nav-height;
 			float: left;
-			width: 520px;
-			padding: 15px;
+			width: 385px;
+			padding: 10px;
 			background-color: $search-bg;
-			border: 0;
+            border: solid #ccc;
+			border-width: 0 1px 2px 1px;
+            border-radius: 3px 0 3px 3px;
 			box-shadow: 0;
 			background-clip: padding-box;
 		}
@@ -126,7 +129,7 @@
 			&.show {
 				#tdr_search_toggle {
 					background-color: $search-bg;
-					color: #fff;
+					color: #004b6e;
 					@include transition(all, .25s);
 				}
 
@@ -139,7 +142,7 @@
 	}
 
 	.input-group {
-		width: 360px;
+		width: 250px;
 	}
 }
 
@@ -162,7 +165,11 @@
 				margin-left: 4px;
 			}
 		}
-	}
+
+      .btn-s {
+        border: solid #ccc !important;
+        border-width: 0 1px !important;
+      }
 
 	.form-control {
 		padding: 6px;
@@ -187,4 +194,5 @@
 			width: 75%;
 		}
 	}
+}
 }
