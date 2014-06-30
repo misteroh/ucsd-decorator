@@ -940,7 +940,7 @@ div.styled
   padding: 0; }
   div.styled
   #page_nav li {
-    border-top: 1px solid #C8CFD3;
+    border-top: 1px solid #DBD7D7;
     color: #06c;
     list-style: none;
     margin: 0;
@@ -988,29 +988,10 @@ div.styled
   border-radius: 0;
   padding: 8px;
   background: none;
-  border: none;
+  border: 1px solid transparent;
+  border-width: 0 1px 0 1px;
   outline: 0;
-  max-height: 35px;
-   }
-.btn:active, .btn.active {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
-
-button#tdr_search_toggle {
-    border: solid #F2F5F7;
-    border-width: 0 1px 0 1px;
-}
-
-  .btn-s {
-      border: solid #ccc !important;
-      border-width: 0 1px !important;
-      -webkit-transition: all 0.25s ease;
-      -moz-transition: all 0.25s ease;
-      -ms-transition-delay: all 0.25s ease;
-      -o-transition: all 0.25s ease;
-      transition: all 0.25s ease;
-  }
+  max-height: 35px; }
   .lt-ie8 #tdr_search_toggle {
     padding: 8px 6px 8px 13px;
     background-image: url(img/search.png);
@@ -1019,6 +1000,10 @@ button#tdr_search_toggle {
   .lt-ie8 .show #tdr_search_toggle {
     background-image: url(img/search-teal.png); }
 
+.btn-s {
+  border: solid #ccc !important;
+  border-width: 0 1px !important; }
+
 @media screen and (min-width: 768px) {
   .tdr_search .dropdown {
     margin-right: 10px; } }
@@ -1026,11 +1011,11 @@ button#tdr_search_toggle {
   .tdr_search .dropdown-menu {
     width: 150px; } }
 .tdr_search .search-scope {
-  height: 27px;
   max-width: 99px;
   font-size: 11px;
   padding: 4px 2px 4px 0;
-  float: left; }
+  float: left;
+  height: 27px; }
 .tdr_search .input-group {
   float: right; }
 .tdr_search form {
@@ -1054,15 +1039,14 @@ button#tdr_search_toggle {
     float: left;
     width: 385px;
     padding: 10px;
-    background-color: #DFE2E4;
-    border: 0;
-    box-shadow: 0;
+    background-color: #dfe2e4;
     border: solid #ccc;
     border-width: 0 1px 2px 1px;
     border-radius: 3px 0 3px 3px;
+    box-shadow: 0;
     background-clip: padding-box; }
   #tdr_nav .tdr_search.show #tdr_search_toggle {
-    background-color: #c6d3da;
+    background-color: #dfe2e4;
     color: #fff; }
 .no-csstransitions #tdr_nav .tdr_search #tdr_search_content {
   display: none; }
@@ -1084,8 +1068,8 @@ button#tdr_search_toggle {
   -ms-transition-delay: background-color 0.25s ease;
   -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease; }
-.csstransitions #tdr_nav .tdr_search.show #tdr_search_toggle{
-  background-color: #DFE2E4;
+.csstransitions #tdr_nav .tdr_search.show #tdr_search_toggle {
+  background-color: #dfe2e4;
   color: #004b6e;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -1098,7 +1082,7 @@ button#tdr_search_toggle {
   -moz-transition: background-color 0.25s ease;
   -ms-transition-delay: background-color 0.25s ease;
   -o-transition: background-color 0.25s ease;
-  transition: all 0.25s ease; }
+  transition: background-color 0.25s ease; }
 #tdr_nav .input-group {
   width: 250px; }
 
@@ -1112,21 +1096,21 @@ button#tdr_search_toggle {
     padding: 4px 5px; }
     #tdr_side_nav .tdr_search .btn .caret {
       margin-left: 4px; }
-#tdr_side_nav .form-control {
-  padding: 6px; }
-  .lt-ie8 #tdr_side_nav .form-control {
-    width: 96%; }
-#tdr_side_nav .input-group {
-  width: 54%; }
-  @media screen and (min-width: 360px) {
-    #tdr_side_nav .input-group {
-      width: 60%; } }
-  @media screen and (min-width: 480px) {
-    #tdr_side_nav .input-group {
-      width: 70%; } }
-  @media screen and (min-width: 640px) {
-    #tdr_side_nav .input-group {
-      width: 75%; } }
+  #tdr_side_nav .tdr_search .form-control {
+    padding: 6px; }
+    .lt-ie8 #tdr_side_nav .tdr_search .form-control {
+      width: 96%; }
+  #tdr_side_nav .tdr_search .input-group {
+    width: 54%; }
+    @media screen and (min-width: 360px) {
+      #tdr_side_nav .tdr_search .input-group {
+        width: 60%; } }
+    @media screen and (min-width: 480px) {
+      #tdr_side_nav .tdr_search .input-group {
+        width: 70%; } }
+    @media screen and (min-width: 640px) {
+      #tdr_side_nav .tdr_search .input-group {
+        width: 75%; } }
 
 .breadcrumb {
   font-size: 11px; }
