@@ -88,12 +88,14 @@
             border-radius: 3px 0 3px 3px;
 			box-shadow: 0;
 			background-clip: padding-box;
+            display: none;
 		}
 
 		&.show {
 			#tdr_search_toggle {
 				background-color: $search-bg;
 				color: #fff;
+                display: block;
 			}
 		}
 	}
@@ -128,7 +130,7 @@
 			}
 
 			#tdr_search_content {
-				display: block;
+				display: none;
 				opacity: 0;
 				@include transition(background-color, .25s);
 			}
@@ -142,6 +144,7 @@
 
 				#tdr_search_content {
 					opacity: 1;
+                    display: block;
 					@include transition(background-color, .25s);
 				}
 			}
