@@ -74,7 +74,7 @@ h2.side a {
 #tdr_crumbs ul {
   padding: 3px 0; }
 
-#tdr_content {
+main, #tdr_content {
   padding: 0; }
 
 #tdr_content_content #tdr_3_col_content, #tdr_content_content #tdr_2_col_content {
