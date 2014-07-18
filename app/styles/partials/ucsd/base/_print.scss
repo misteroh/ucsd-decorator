@@ -4,7 +4,7 @@
 	 * Print Styles
  	 */
 	/* reset background and float elements */	
-	html, #tdr_title *,#tdr_footer, #tdr_footer * {
+	html, footer, footer *, #tdr_title *,#tdr_footer, #tdr_footer * {
 		background-color: transparent !important;
 		background-image: none !important;
 		overflow: visible !important;
