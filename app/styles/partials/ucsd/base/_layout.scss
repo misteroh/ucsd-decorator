@@ -5,7 +5,7 @@
 /**********************************************************************
  * body - defaults
  */
-#tdr_login,#tdr_title,#tdr_search,#tdr_crumbs,#tdr_content,#tdr_footer {
+main, footer, #tdr_login,#tdr_title,#tdr_search,#tdr_crumbs,#tdr_content,#tdr_footer {
   overflow: hidden;
   width: 100%;
 }
@@ -35,7 +35,7 @@ body.fluid #tdr_login_content,body.fluid #tdr_title_content,body.fluid #tdr_nav_
 }
 
 /* wide fluid layout */
-body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
+body.wide main, body.wide #tdr_login, body.wide #tdr_title, body.wide #tdr_search, body.wide #tdr_crumbs, body.wide #tdr_content {
   overflow: visible;
 }
 
@@ -333,7 +333,7 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
  * CSS Styling for the content
  */
 
-#tdr_content {
+main, #tdr_content {
   background: #fff;
   padding: 1em 0;
 }
