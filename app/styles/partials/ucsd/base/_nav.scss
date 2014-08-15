@@ -145,7 +145,13 @@ body {
 
   .caret {
     margin-left: 7px;
+    display: inline-block !important;
+    border-top: 4px solid !important;
+    border-right: 4px solid transparent !important;
+    border-left: 4px solid transparent !important;
+    padding: 0 !important;
   }
+
 
   .nav > li > a:hover, .nav > li > a:focus {
     background-color: #fff;
@@ -490,3 +496,4 @@ div.styled
 }
 
 /* end hack */
+
