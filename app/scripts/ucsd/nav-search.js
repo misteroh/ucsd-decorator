@@ -53,33 +53,33 @@ $(document).ready(function() {
     });
 
     function navMover() {
-//        if ($window.width() >= desktopBreak) {
-//            if ($body.hasClass("active")) {
-//                $body.removeClass("active");
-//
-//                if ($('#tdr_search_content>form').length) {
-//                    //
-//                } else {
-//                    $('.nav-offcanvas>.tdr_search>form').appendTo($('#tdr_search_content'));
-//                    $('#tdr_side_nav>.tdr_nav_list').prependTo('#tdr_nav_content');
-//                    /* init nav menu */
-//                    $navList.superfish({
-//                        cssArrows: false
-//                    });
-//                }
-//
-//            }
-//
-//            if ($topNav.height() > maxNavHeight ) {
-//                $body.addClass('collapse-nav');
-//            } else {
-//                $body.removeClass('collapse-nav');
-//            }
-//        }
-//
-//        if ($window.width() < desktopBreak && $body.hasClass("collapse-nav")) {
-//            $body.removeClass("collapse-nav");
-//        }
+        if ($window.width() >= desktopBreak) {
+            if ($body.hasClass("active")) {
+                $body.removeClass("active");
+
+                if ($('#tdr_search_content>form').length) {
+                    //
+                } else {
+                    $('.nav-offcanvas>.tdr_search>form').appendTo($('#tdr_search_content'));
+                    $('#tdr_side_nav>.tdr_nav_list').prependTo('#tdr_nav_content');
+                    /* init nav menu */
+                    $navList.superfish({
+                        cssArrows: false
+                    });
+                }
+
+            }
+
+            if ($topNav.height() > maxNavHeight ) {
+                $body.addClass('collapse-nav');
+            } else {
+                $body.removeClass('collapse-nav');
+            }
+        }
+
+        if ($window.width() < desktopBreak && $body.hasClass("collapse-nav")) {
+            $body.removeClass("collapse-nav");
+        }
 
 
     }
