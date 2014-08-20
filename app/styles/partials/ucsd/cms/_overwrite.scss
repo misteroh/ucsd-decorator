@@ -89,7 +89,7 @@ FLEXSLIDER
 		background: rgba(0, 0, 0, 0.3);
 		_background: 0;
 		*background: 0;
-		background: unquote("0\0/");
+		background: 0;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000, endColorstr=#4c000000);
 		-webkit-border-radius: 12px;
 		-moz-border-radius: 12px;
@@ -173,7 +173,7 @@ FLEXSLIDER
 	background: rgba(11, 99, 139, 0.8);
 	_background: 0;
 	*background: 0;
-	background: unquote("0\0/");
+	background: 0;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#AA1986b4,endColorstr=#AA1986b4);
 	zoom: 1;
 }
