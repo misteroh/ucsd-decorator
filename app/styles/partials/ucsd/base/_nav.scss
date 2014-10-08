@@ -12,6 +12,11 @@ html {
     #tdr_side_nav {
       opacity: 0;
       width: $slider-offset;
+
+      @media screen and (max-width: $tablet) {
+        width: $slider-offset-mobile;
+      }
+
       position: fixed;
       top: 0;
       background-color: #F7F7F7;
@@ -29,6 +34,14 @@ html {
         -moz-transform: translate3d($slider-offset, 0, 0);
         -ms-transform: translate3d($slider-offset, 0, 0);
         -o-transform: translate3d($slider-offset, 0, 0);
+
+        @media screen and (max-width: $tablet) {
+          -webkit-transform: translate3d($slider-offset-mobile, 0, 0);
+          -moz-transform: translate3d($slider-offset-mobile, 0, 0);
+          -ms-transform: translate3d($slider-offset-mobile, 0, 0);
+          -o-transform: translate3d($slider-offset-mobile, 0, 0);
+        }
+
         @include transition(all, $trans-time);
       }
 
