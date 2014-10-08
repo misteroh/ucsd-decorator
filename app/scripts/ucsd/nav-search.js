@@ -84,6 +84,18 @@ $(document).ready(function() {
 
     }
 
-    //FastClick.attach(document.body);
-    $window.on('load orientationchange resize', navMover);
+
+    FastClick.attach(document.body);
+
+    // Detecting IE
+    var oldIE;
+    if ($('html').is('.ie7, .ie8')) {
+        oldIE = true;
+    }
+
+    if (!oldIE) {
+        $window.on('load orientationchange resize', navMover);
+    }
+
+
 });
