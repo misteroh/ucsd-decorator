@@ -53,12 +53,9 @@ $(document).ready(function() {
     });
 
     function navMover() {
-        alert('calling navMover');
         if ($window.width() >= desktopBreak) {
-            alert('beyond breakpoint');
 
             if ($body.hasClass("active")) {
-                alert('has active class');
 
                 $body.removeClass("active");
 
@@ -76,16 +73,13 @@ $(document).ready(function() {
             }
 
             if ($topNav.height() > maxNavHeight ) {
-                alert('nav to tall. collapsing');
                 $body.addClass('collapse-nav');
             } else {
-                alert('nav ok. remove collapse tag');
                 $body.removeClass('collapse-nav');
             }
         }
 
         if ($window.width() < desktopBreak && $body.hasClass("collapse-nav")) {
-            alert('remove collapse nav');
             $body.removeClass("collapse-nav");
         }
 
@@ -101,9 +95,13 @@ $(document).ready(function() {
         oldIE = true;
     }
 
-    if (oldIE == false) {
-        alert('executing navMover');
+    if (oldIE) {
+        var displayCSS = $('#tdr_nav').css('display');
+        $('#tdr_nav').css('display', 'none');
+
+    } else {
         $window.on('load orientationchange resize', navMover);
     }
+
 
 });
