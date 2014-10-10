@@ -95,12 +95,7 @@ $(document).ready(function() {
         oldIE = true;
     }
 
-    if (oldIE) {
-        var displayCSS = $('#tdr_nav').css('display');
-        $('#tdr_nav').css('display', 'none');
-        $('.sf-with-ul').css('height', 'auto');
-
-    } else {
+    if (!oldIE) {
         $window.on('load orientationchange resize', navMover);
     }
 
