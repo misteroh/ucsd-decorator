@@ -98,6 +98,7 @@ $(document).ready(function() {
     if (oldIE) {
         var displayCSS = $('#tdr_nav').css('display');
         $('#tdr_nav').css('display', 'none');
+        $('.sf-with-ul').css('height', 'auto');
 
     } else {
         $window.on('load orientationchange resize', navMover);
