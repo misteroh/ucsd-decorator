@@ -1,0 +1,120 @@
+/* IE7 and IE8 specifics */
+.tdr_nav_list li {
+  float:left;
+}
+
+.navbar-toggle,.nav-offcanvas {
+  display:none;
+}
+
+.tdr_search {
+  filter:none;
+}
+
+#tdr_nav {
+  position: relative;
+  z-index: 2;
+}
+
+.tdr_nav_list {
+  position:absolute;
+  z-index:1;
+}
+
+.flexslider .flex-direction-nav li a {
+  background: 0;
+}
+
+.flexslider.alt .flex-direction-nav li a,
+.flexslider.alt .flex-caption {
+  background: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#AA1986b4, endColorstr=#AA1986b4);
+  zoom: 1;
+}
+
+input,button,textarea,select {
+  font-size: 100%;
+}
+
+body #tdr_login_content,body #tdr_title_content,body #tdr_nav_content,body #tdr_search_content,body #tdr_crumbs_content,body #tdr_content_content,body #tdr_footer_content {
+  width: auto;
+
+  @media screen and (min-width: $full) {
+    width: auto;
+  }
+}
+
+#tdr_nav_list, .tdr_nav_list {
+
+  @media only screen and (max-width: $desktop-small) {
+    li {
+      *height: 33px; /* IE7 only hack */
+    }
+
+    li li a {
+      *height: 16px;
+    }
+  }
+}
+
+#tdr_side_nav {
+
+  .lt-ie8 & {
+    display: none;
+  }
+}
+
+#tdr_search_toggle {
+
+  .lt-ie8 & {
+    padding: 8px 6px 8px 13px;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: 2px 8px;
+  }
+
+  .lt-ie8 .show & {
+    background-image: url(img/search-teal.png);
+  }
+}
+
+#tdr_side_nav {
+  .tdr_search {
+    .form-control {
+      .lt-ie8 & {
+        width: 96%;
+      }
+    }
+  }
+}
+
+/* ie7 hack */
+*:first-child+html .drawer-toggle a {
+  display: inline-block;
+}
+
+/*******************************************************************
+FLEXSLIDER
+************************/
+
+.flexslider {
+
+  /* direction control */
+  .flex-direction-nav li a {
+    *background: 0;
+  }
+}
+
+
+/* alternative theme */
+.flexslider.alt .flex-direction-nav li a,
+.flexslider.alt .flex-caption {
+  *background: 0;
+}
+
+/* ie7 hack */
+*:first-child+html .playing,
+*:first-child+html .paused {
+  display: inline-block;
+}
+
