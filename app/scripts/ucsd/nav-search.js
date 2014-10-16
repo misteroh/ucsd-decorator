@@ -91,7 +91,7 @@ $(document).ready(function() {
 
     // Detecting IE
     var oldIE = false;
-    if ($('html').is('.ie7, .ie8')) {
+    if ($('html').is('.ie7')) {
         oldIE = true;
     }
 
