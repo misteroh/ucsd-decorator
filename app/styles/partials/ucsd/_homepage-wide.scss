@@ -300,7 +300,35 @@ h2.side {
     height: 0 !important;
     position: relative;
     top: 135px
+  }@media screen and (max-width: 500px) {
+
+  .flexslider {
+    margin: 0 0 25px 0;
+    overflow: visible
   }
+
+  .flex-caption {
+    font-size: 14px;
+  }
+
+  .flex-controls {
+    height: 0;
+    position: relative;
+    top: 135px
+  }
+
+  .flex-controls {
+    /*position: relative;
+    top: 0*/
+  }
+
+  .main-header {
+    padding: 0
+  }
+  h2.top {
+    font-size: 20px
+  }
+}
 
   .main-header {
     padding: 0
