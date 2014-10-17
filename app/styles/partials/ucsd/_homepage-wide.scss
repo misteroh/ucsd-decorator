@@ -286,9 +286,22 @@ h2.side {
 }
 
 @media screen and (max-width: 500px) {
-  .flex-caption {
-    font-size: 14px
+
+  .flexslider {
+    margin: 0 0 65px 0;
+    overflow: visible
   }
+
+  .flex-caption {
+    font-size: 14px;
+  }
+
+  .flex-controls {
+    height: 0 !important;
+    position: relative;
+    top: 135px
+  }
+
   .main-header {
     padding: 0
   }
