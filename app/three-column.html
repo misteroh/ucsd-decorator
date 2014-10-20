@@ -20,11 +20,26 @@
     <link rel="stylesheet" href="styles/base.css">
     <!-- endbuild -->
 
-    <!-- Site-specific CSS files -->
+    <!-- Begin site-specific javascript files -->
+    <link href="/_resources/site-specific.css" media="all" rel="stylesheet" />
+    <!-- End site-specific javascript files -->
 
-    <!-- build:js({app,.tmp}) scripts/modernizr.js -->
-    <script src="vendor/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="//www.ucsd.edu/common/cwp/4.0.0/styles/ie-support.css" />
+    <![endif]-->
+
+    <!-- Other JS files -->
+    <script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/modernizr.js"></script>
+    <script src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/html5shiv.js"></script>
+    <script src="/_resources/cross-domain/respond.js"></script>
+    <link href="//www.ucsd.edu/common/cwp/4.0.0/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="/_resources/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <script src="/_resources/cross-domain/respond.proxy.js"></script>
+    <![endif]-->
 </head>
 <body>
 <div id="tdr_wrapper">
@@ -69,7 +84,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="active">
-                            <a href="#">Templates<span class="caret"></span></a>
+                            <a href="#">Templates</a>
                             <ul>
                                 <li><a href="blank-slate.html">Blank Slate</a></li>
                                 <li><a href="two-column.html">Two Columns</a></li>
@@ -202,7 +217,7 @@
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+<script src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
 
 <script type="text/javascript">
     (function ($) {
@@ -230,41 +245,16 @@
     // ]]>
 </script>
 
-<!-- build:js scripts/vendor.js -->
-<script src="vendor/respond/dest/respond.src.js"></script>
-<script src="vendor/flexslider/jquery.flexslider.js"></script>
-<script src="vendor/superfish/dist/js/superfish.js"></script>
-<script src="vendor/superfish/dist/js/hoverIntent.js"></script>
-<script src="vendor/fastclick/lib/fastclick.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-<!-- endbuild -->
+<script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/vendor.js"></script>
+<script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/base-min.js"></script>
 
-<!-- build:js({app,.tmp}) scripts/base-min.js -->
-<script src="scripts/ucsd/nav-search.js"></script>
-<script src="scripts/ucsd/copyright.js"></script>
-<script src="scripts/ucsd/footer.js"></script>
-<script src="scripts/ucsd/logout.js"></script>
-<script src="scripts/ucsd/flexslider-init.js"></script>
-<script src="scripts/ucsd/drawer.js"></script>
-<!-- endbuild -->
 
 
 <!-- Site-specific javascript files -->
 <script src="docs/site-specific.js"></script>
 
 <!-- Google Search -->
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script src="//www.google.com/jsapi"></script>
 <script type="text/javascript">// <![CDATA[
 google.load('search', '1');
 google.setOnLoadCallback(function () {
@@ -274,7 +264,7 @@ google.setOnLoadCallback(function () {
             'cse-site-search');
 });
 // ]]></script>
-<script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
+<script src="//www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
 
 </body>
 </html>
