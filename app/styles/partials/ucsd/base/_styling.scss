@@ -441,10 +441,15 @@ input[type="text"],select,textarea {
 
 .form-control {
 	border-radius: 0;
+  padding: .5em;  /* to keep in line with other input paddings */
 }
 
 input[type="text"],textarea {
-	padding: .25em;
+	padding: .5em;
+}
+
+select {
+  padding: .5em .2em;
 }
 
 fieldset {
