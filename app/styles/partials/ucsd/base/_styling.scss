@@ -441,10 +441,15 @@ input[type="text"],select,textarea {
 
 .form-control {
 	border-radius: 0;
+  padding: .5em;  /* to keep in line with other input paddings */
 }
 
 input[type="text"],textarea {
-	padding: .25em;
+	padding: .5em;
+}
+
+select.form-control {
+  padding: .5em .2em;
 }
 
 fieldset {
@@ -455,8 +460,8 @@ fieldset {
 
 legend {
 	color: #333;
-	margin-left: 2em;
-	padding: 0 .5em;
+	margin-left: 0;
+	padding: 0; 
 }
 
 input[type=radio],input[type=checkbox] {
