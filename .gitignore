@@ -1,5 +1,6 @@
-dist
-.idea
-.sass-cache
-.tmp
-node_modules
+.sass-cache/
+.tmp/
+dist/
+node_modules/
+.idea/
+ucsd-decorator.zip
