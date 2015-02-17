@@ -20,11 +20,14 @@
     <link rel="stylesheet" href="styles/base.css">
     <!-- endbuild -->
 
-    <!-- build:css(.tmp) styles/cms-min.css -->
-    <link rel="stylesheet" href="styles/cms.css">
+    <!-- build:css(.tmp) styles/ie-support.css -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/ie-support.css">
+    <![endif]-->
     <!-- endbuild -->
 
-    <!-- Site-specific CSS files -->
+    <!-- Begin site-specific CSS files -->
+    <!-- End site-specific CSS files -->
 
     <!-- build:js({app,.tmp}) scripts/modernizr.js -->
     <script src="vendor/modernizr/modernizr.js"></script>
@@ -73,7 +76,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="">
-                            <a href="#">Templates<b class="caret"></b></a>
+                            <a href="#">Templates<span class="caret"></span></a>
                             <ul>
                                 <li><a href="blank-slate.html">Blank Slate</a></li>
                                 <li><a href="two-column.html">Two Columns</a></li>
@@ -82,6 +85,12 @@
                                 <li><a href="form-a.html">Basic Form</a></li>
                             </ul>
                         </li>
+                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
+                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
+                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
+                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
+                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
+                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
                         <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
                     </ul>
 
@@ -193,7 +202,6 @@
 </script>
 
 <!-- build:js scripts/vendor.js -->
-<script src="vendor/respond/dest/respond.src.js"></script>
 <script src="vendor/flexslider/jquery.flexslider.js"></script>
 <script src="vendor/superfish/dist/js/superfish.js"></script>
 <script src="vendor/fastclick/lib/fastclick.js"></script>
@@ -212,15 +220,13 @@
 
 <!-- build:js({app,.tmp}) scripts/base-min.js -->
 <script src="scripts/ucsd/nav-search.js"></script>
-<!-- endbuild -->
-
-<!-- build:js({app,.tmp}) scripts/cms-min.js -->
 <script src="scripts/ucsd/copyright.js"></script>
 <script src="scripts/ucsd/footer.js"></script>
 <script src="scripts/ucsd/logout.js"></script>
 <script src="scripts/ucsd/flexslider-init.js"></script>
 <script src="scripts/ucsd/drawer.js"></script>
 <!-- endbuild -->
+
 
 <!-- Google Search -->
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>

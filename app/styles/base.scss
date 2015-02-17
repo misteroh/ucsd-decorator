@@ -14,3 +14,9 @@
 @import "partials/ucsd/base/fonts";
 @import "partials/ucsd/base/styling";
 @import "partials/ucsd/base/print";
+
+/********************** Include from CMS.scss */
+@import "../vendor/flexslider/flexslider";
+@import "partials/ucsd/cms/toggler";
+@import "partials/ucsd/cms/drawer";
+@import "partials/ucsd/cms/overwrite";

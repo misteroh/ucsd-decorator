@@ -69,7 +69,6 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     '<%= config.app %>/styles/base.css': '<%= config.app %>/styles/base.scss',
-                    '<%= config.app %>/styles/cms.css': '<%= config.app %>/styles/cms.scss',
                     '<%= config.app %>/styles/homepage-wide.css': '<%= config.app %>/styles/homepage-wide.scss'
                 },
                 options: {

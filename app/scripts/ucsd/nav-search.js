@@ -54,7 +54,9 @@ $(document).ready(function() {
 
     function navMover() {
         if ($window.width() >= desktopBreak) {
+
             if ($body.hasClass("active")) {
+
                 $body.removeClass("active");
 
                 if ($('#tdr_search_content>form').length) {
@@ -84,6 +86,18 @@ $(document).ready(function() {
 
     }
 
-    //FastClick.attach(document.body);
-    $window.on('load orientationchange resize', navMover);
+
+    FastClick.attach(document.body);
+
+    // Detecting IE 7
+    var oldIE = false;
+    if(navigator.appVersion.indexOf("MSIE 7.")!=-1) {
+        oldIE = true;
+    }
+
+    if (!oldIE) {
+        $window.on('load orientationchange resize', navMover);
+    }
+
+
 });

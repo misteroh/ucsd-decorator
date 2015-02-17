@@ -101,8 +101,7 @@ a:hover,a:active,
 
 /* external links */
 a[target="_blank"] {
-	background: url(img/sprite_icon.png) no-repeat scroll right -50px
-	transparent;
+	background: url(img/sprite_icon.png) no-repeat scroll right -50px transparent;
 	padding-right: 20px;
 }
 
@@ -154,8 +153,9 @@ ol ol ol {
  */
 pre,code {
 	color: #060;
+    display: block;
 	font-family: Consolas, Monaco, monospace;
-	white-space: pre;
+	white-space: pre-line;
 }
 
 pre {
@@ -201,10 +201,4 @@ input,button,textarea,select,optgroup,option {
 	font-size: inherit;
 	font-style: inherit;
 	font-weight: inherit;
-}
-
-/* @purpose To enable resizing for IE
- * @branch For IE6-Win, IE7-Win */
-input,button,textarea,select {
-	*font-size: 100%;
 }
