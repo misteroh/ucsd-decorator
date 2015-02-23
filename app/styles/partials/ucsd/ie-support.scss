@@ -1,8 +1,5 @@
 /* IE7 and IE8 specifics */
 
-
-
-
 /********************
 FLEXSLIDER
 ************************/
@@ -12,8 +9,6 @@ FLEXSLIDER
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
   zoom: 1;
 }
-
-
 
 /* side nav ie 7 issues */
 #tdr_side_nav {
@@ -41,3 +36,16 @@ FLEXSLIDER
   *width: 22px !important;
 }
 /* Just because we're nice */
+
+/* This fixes IE 7/8 errors when the side nav incorrectly displays */
+/* Will just remove the button and keep the navbar present at all times */
+.nav-offcanvas {
+  display: none !important;
+}
+#tdr_title_page_title {
+  left: 0px !important;
+}
+#tdr_nav {
+  display: block !important;
+}
+
