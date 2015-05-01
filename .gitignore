@@ -1,6 +1,7 @@
+.dropbox
+.idea/
 .sass-cache/
 .tmp/
-.idea/
 dist/
 node_modules/
 ucsd-decorator.zip
