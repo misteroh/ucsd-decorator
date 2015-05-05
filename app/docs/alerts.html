@@ -12,9 +12,31 @@
     <meta name="PAGETITLE" content="CMS Kitchen Sink">
     <link rel="stylesheet" href="../styles/bootstrap.css">
     <link rel="stylesheet" href="../styles/base-min.css">
-    <!-- Site-specific CSS files -->
+
+    <!-- build:css(.tmp) ../styles/ie-support.css -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../styles/partials/ucsd/ie-support.css">
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- Begin site-specific CSS files -->
     <link rel="stylesheet" href="site-specific.css">
-    <script src="../scripts/modernizr.js"></script>
+    <!-- End site-specific CSS files -->
+
+    <!-- build:js({app,.tmp}) ../scripts/modernizr.js -->
+    <script src="../vendor/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <!--[if lt IE 9]>
+    <!-- build:js({app,.tmp}) ../scripts/respond.min.js -->
+    <script src="../vendor/respond/dest/respond.min.js"></script>
+    <!-- endbuild -->
+    <link href="http://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="../img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <!-- build:js({app,.tmp}) ../scripts/respond-proxy.js -->
+    <script src="../scripts/ucsd/respond-proxy.js"></script>
+    <!-- endbuild -->
+    <![endif]-->
 </head>
 <body>
 
@@ -363,7 +385,9 @@
 </nav>
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- build:js({app,.tmp}) ../scripts/jquery.min.js -->
+<script src="../vendor/jquery/dist/jquery.min.js"></script>
+<!-- endbuild -->
 <script type="text/javascript" src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
 
 <script type="text/javascript">
