@@ -6,6 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ucsd-decorator-3 node_modules" level="project" />
     <orderEntry type="library" name="sass-stdlib" level="application" />
+    <orderEntry type="library" name="ucsd-decorator node_modules" level="project" />
   </component>
 </module>
-
