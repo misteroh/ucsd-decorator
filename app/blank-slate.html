@@ -11,9 +11,14 @@
     <meta name="PAGETITLE" content="INSERT TITLE HERE">
     <meta name="DESCRIPTION" content="INSERT DESCRIPTION HERE">
 
-    <link href="//www.ucsd.edu/common/cwp/4.0.0/styles/bootstrap.css" rel="stylesheet"/>
-    <link href="//www.ucsd.edu/common/cwp/4.0.0/styles/base-min.css" rel="stylesheet"/>
 
+    <!-- build:css(.tmp) styles/bootstrap.css -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/base-min.css -->
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- endbuild -->
 
     <!-- Begin site-specific CSS files -->
     <!-- End site-specific CSS files -->
@@ -77,7 +82,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="active">
-                            <a href="templates.html">Templates</a>
+                            <a href="#">Templates<span class="caret"></span></a>
                             <ul>
                                 <li><a href="blank-slate.html">Blank Slate</a></li>
                                 <li><a href="two-column.html">Two Columns</a></li>
@@ -95,7 +100,7 @@
                         </button>
 
                         <div id="tdr_search_content">
-                            <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+                            <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
                                 <select class="search-scope" name="search-scope">
                                     <option selected="selected" value="cwo">This Site</option>
                                     <option value="default_collection">All UCSD Sites</option>
@@ -176,7 +181,6 @@
     $(document).ready(function () {
         initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
         initCopyright();
-        initLogout('http://www.ucsd.edu');
     });
 </script>
 
@@ -197,12 +201,37 @@
     // ]]>
 </script>
 
-<script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/vendor.js"></script>
-<script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/base-min.js"></script>
+<!-- build:js scripts/vendor.js -->
+<script src="vendor/respond/dest/respond.src.js"></script>
+<script src="vendor/flexslider/jquery.flexslider.js"></script>
+<script src="vendor/superfish/dist/js/superfish.js"></script>
+<script src="vendor/superfish/dist/js/hoverIntent.js"></script>
+<script src="vendor/fastclick/lib/fastclick.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
 
+<!-- build:js({app,.tmp}) scripts/base-min.js -->
+<script src="scripts/ucsd/nav-search.js"></script>
+<script src="scripts/ucsd/copyright.js"></script>
+<script src="scripts/ucsd/footer.js"></script>
+<script src="scripts/ucsd/logout.js"></script>
+<script src="scripts/ucsd/flexslider-init.js"></script>
+<script src="scripts/ucsd/drawer.js"></script>
+<!-- endbuild -->
 
 <!-- Google Search -->
-<script src="//www.google.com/jsapi"></script>
+<script src="http://www.google.com/jsapi"></script>
 <script>// <![CDATA[
 google.load('search', '1');
 google.setOnLoadCallback(function () {
@@ -212,7 +241,7 @@ google.setOnLoadCallback(function () {
             'cse-site-search');
 });
 // ]]></script>
-<script src="//www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+<script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
 
 </body>
 </html>
