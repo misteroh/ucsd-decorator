@@ -27,6 +27,7 @@
     <!-- endbuild -->
 
     <!-- Begin site-specific CSS files -->
+    <link href="/_resources/site-specific.css" media="all" rel="stylesheet" />
     <!-- End site-specific CSS files -->
 
     <!-- build:js({app,.tmp}) scripts/modernizr.js -->
@@ -87,7 +88,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="">
-                            <a href="#">Templates<span class="caret"></span></a>
+                            <a href="templates.html">Templates</a>
                             <ul>
                                 <li><a href="blank-slate.html">Blank Slate</a></li>
                                 <li><a href="two-column.html">Two Columns</a></li>
@@ -187,6 +188,7 @@
         $(document).ready(function () {
             initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
             initCopyright();
+            initLogout('http://www.ucsd.edu');
         });
     })(jQuery);
 </script>
@@ -247,6 +249,5 @@ google.setOnLoadCallback(function () {
 });
 // ]]></script>
 <script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
-
 </body>
 </html>

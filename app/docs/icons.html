@@ -10,7 +10,9 @@
     <meta name="robots" content="index,follow,noarchive">
     <meta name="SITE" content="CWO">
     <meta name="PAGETITLE" content="CMS Kitchen Sink">
+
     <!-- build:css(.tmp) ../styles/bootstrap.css -->
+
     <link rel="stylesheet" href="../styles/bootstrap.css">
     <!-- endbuild -->
 
@@ -85,7 +87,7 @@
                 <a href="../index.html">Home</a>
             </li>
             <li class="">
-                <a href="../templates.html">Templates<span class="caret"></span></a>
+                <a href="../templates.html">Templates</a>
                 <ul>
                     <li><a href="../blank-slate.html">Blank Slate</a></li>
                     <li><a href="../two-column.html">Two Column</a></li>
@@ -145,7 +147,7 @@
 <!-- Icons
 ================================================== -->
 <div class="bs-docs-section">
-<h1 id="icons" class="page-header">Icons</h2>
+<h1 id="icons" class="page-header">Icons</h1>
 <h2 id="icons-glyphicons">Glyphicons</h2>
 <p>Includes 200 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
 <div class="bs-glyphicons">
@@ -1153,7 +1155,6 @@
 
 </ul>
 </div>
-</div>
 
 <h2 id="icons-glyphicons-how-to-use">How to use</h2>
 <p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
@@ -1255,7 +1256,6 @@
  &lt;/div&gt;
 </pre>
 
-</div>
 </div>
 
 <div id="tdr_2_col_nav">
@@ -1382,6 +1382,7 @@
         $(document).ready(function () {
             initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
             initCopyright();
+            initLogout('http://www.ucsd.edu');
         });
     })(jQuery);
 </script>
@@ -1403,8 +1404,9 @@
     // ]]>
 </script>
 
-<script src="../scripts/vendor.js"></script>
-<script src="../scripts/base-min.js"></script>
+<script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/vendor.js"></script>
+<script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/base-min.js"></script>
+
 <!-- Google Search -->
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">// <![CDATA[
@@ -1416,6 +1418,7 @@ google.setOnLoadCallback(function () {
             'cse-site-search');
 });
 // ]]></script>
+
 <script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
 
 </body>

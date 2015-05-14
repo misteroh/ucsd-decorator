@@ -24,9 +24,10 @@
     <link rel="stylesheet" href="styles/homepage-wide.css">
     <!-- endbuild -->
 
-
-    <!-- build:js({app,.tmp}) scripts/modernizr.js -->
-    <script src="vendor/modernizr/modernizr.js"></script>
+    <!-- build:css(.tmp) styles/ie-support.css -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/ie-support.css">
+    <![endif]-->
     <!-- endbuild -->
 
     <!--[if lt IE 9]>
@@ -84,7 +85,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="active">
-                            <a href="#">Templates<span class="caret"></span></a>
+                            <a href="templates.html">Templates</a>
                             <ul>
                                 <li><a href="blank-slate.html">Blank Slate</a></li>
                                 <li><a href="two-column.html">Two Columns</a></li>
@@ -289,6 +290,7 @@
         $(document).ready(function () {
             initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
             initCopyright();
+            initLogout('http://www.ucsd.edu');
         });
     })(jQuery);
 </script>
@@ -348,6 +350,5 @@ google.setOnLoadCallback(function () {
 });
 // ]]></script>
 <script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
-
 </body>
 </html>

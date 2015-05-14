@@ -10,6 +10,7 @@
     <meta name="robots" content="index,follow,noarchive">
     <meta name="SITE" content="CWO">
     <meta name="PAGETITLE" content="CMS Kitchen Sink">
+
     <!-- build:css(.tmp) ../styles/bootstrap.css -->
     <link rel="stylesheet" href="../styles/bootstrap.css">
     <!-- endbuild -->
@@ -85,7 +86,7 @@
                 <a href="../index.html">Home</a>
             </li>
             <li class="">
-                <a href="#">Templates<span class="caret"></span></a>
+                <a href="#">Templates</a>
                 <ul>
                     <li><a href="../blank-slate.html">Blank Slate</a></li>
                     <li><a href="../two-column.html">Two Column</a></li>
@@ -137,9 +138,6 @@
 <div id="tdr_2_col_content">
 
 <div class="main-content" role="main">
-
-
-
 
 <!-- Typography
 ================================================== -->
@@ -6329,6 +6327,7 @@
         $(document).ready(function () {
             initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
             initCopyright();
+            initLogout('http://www.ucsd.edu');
         });
     })(jQuery);
 </script>
@@ -6350,8 +6349,10 @@
     // ]]>
 </script>
 
-<script src="../scripts/vendor.js"></script>
-<script src="../scripts/base-min.js"></script>
+<script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/vendor.js"></script>
+<script src="//www.ucsd.edu/common/cwp/4.0.0/scripts/base-min.js"></script>
+
+
 <!-- Google Search -->
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">// <![CDATA[
