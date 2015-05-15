@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="CompassSettings">
+<<<<<<< HEAD
+    <option name="compassExecutableFilePath" value="/usr/bin/compass" />
+    <option name="compassSupportEnabled" value="true" />
+=======
     <option name="compassExecutableFilePath" value="C:/DevKit/Ruby/bin/compass.bat" />
     <option name="compassSupportEnabled" value="true" />
     <option name="importPaths">
@@ -8,6 +12,7 @@
         <option value="C:/DevKit/Ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets" />
       </list>
     </option>
+>>>>>>> 4926b442b65073635aa2c39864052e948f7d6ee8
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
