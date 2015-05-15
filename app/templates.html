@@ -23,6 +23,12 @@
     <!-- Begin site-specific CSS files -->
     <!-- End site-specific CSS files -->
 
+    <!-- build:css(.tmp) styles/ie-support.css -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/partials/ucsd/ie-support.css">
+    <![endif]-->
+    <!-- endbuild -->
+
     <!-- build:js({app,.tmp}) scripts/modernizr.js -->
     <script src="vendor/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -185,7 +191,7 @@
     $(document).ready(function () {
         initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
         initCopyright();
-        initLogout('http://www.ucsd.edu');
+        initLogout('https://www.ucsd.edu');
     });
 </script>
 
@@ -235,7 +241,7 @@
 
 
 <!-- Google Search -->
-<script src="//www.google.com/jsapi"></script>
+<script src="https://www.google.com/jsapi"></script>
 <script>// <![CDATA[
 google.load('search', '1');
 google.setOnLoadCallback(function () {
@@ -245,7 +251,7 @@ google.setOnLoadCallback(function () {
             'cse-site-search');
 });
 // ]]></script>
-<script src="//www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
 
 </body>
 </html>
