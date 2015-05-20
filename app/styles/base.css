@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /********************* VARIABLES & MIXINS */
 /* BREAKPOINTS */
 /* COLORS */
@@ -1065,7 +1064,7 @@ div.styled
     float: left;
     width: 385px;
     padding: 10px;
-    background-color: #dfe2e4;
+    background-color: #DFE2E4;
     border: solid #ccc;
     border-width: 0 1px 2px 1px;
     border-radius: 3px 0 3px 3px;
@@ -1073,7 +1072,7 @@ div.styled
     background-clip: padding-box;
     display: none; }
   #tdr_nav .tdr_search.show #tdr_search_toggle {
-    background-color: #dfe2e4;
+    background-color: #DFE2E4;
     color: #fff;
     display: block; }
 .no-csstransitions #tdr_nav .tdr_search #tdr_search_content {
@@ -1097,7 +1096,7 @@ div.styled
   -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease; }
 .csstransitions #tdr_nav .tdr_search.show #tdr_search_toggle {
-  background-color: #dfe2e4;
+  background-color: #DFE2E4;
   color: #004b6e;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -1496,8 +1495,8 @@ img.right {
  */
 .primary {
   background: #fc0;
-  background: -moz-linear-gradient(top, #ffcc00, #ffaa00);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffcc00), to(#ffaa00));
+  background: -moz-linear-gradient(top, #fc0, #fa0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc0), to(#fa0));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc00',endColorstr='#ffaa00'); }
 
 .primary:hover {
@@ -1505,8 +1504,8 @@ img.right {
 
 .primary:disabled {
   background: #fd0;
-  background: -moz-linear-gradient(top, #ffdd00, #ffcc00);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffdd00), to(#ffcc00));
+  background: -moz-linear-gradient(top, #fd0, #fc0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fd0), to(#fc0));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdd00',endColorstr='#ffcc00'); }
 
 /*---------------------------------------------------------------------
@@ -1514,8 +1513,8 @@ img.right {
  */
 .secondary {
   background: #eee;
-  background: -moz-linear-gradient(top, #eeeeee, #dddddd);
-  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
+  background: -moz-linear-gradient(top, #eee, #ddd);
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#dddddd'); }
 
 .secondary:hover {
@@ -1523,8 +1522,8 @@ img.right {
 
 .secondary:disabled {
   background: #fff;
-  background: -moz-linear-gradient(top, white, #eeeeee);
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#eeeeee));
+  background: -moz-linear-gradient(top, #fff, #eee);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#eeeeee'); }
 
 /*---------------------------------------------------------------------
@@ -1668,7 +1667,8 @@ a.button {
   background-repeat: no-repeat;
   height: 33px;
   margin: 0 0 10px 0;
-  padding: 0 40px; }
+  padding: 0 40px;
+  cursor: pointer; }
 
 .social-list li.facebook {
   background-image: url(img/sprite_social.png);
@@ -1965,44 +1965,48 @@ span.loading {
     display: none; } }
 /********************** Include from CMS.scss */
 /*
- * jQuery FlexSlider v2.2.0
+ * jQuery FlexSlider v2.4.0
  * http://www.woothemes.com/flexslider/
  *
  * Copyright 2012 WooThemes
- * Free to use under the GPLv2 license.
+ * Free to use under the GPLv2 and later license.
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * Contributing author: Tyler Smith (@mbmufffin)
+ *
  */
-/* Browser Resets
-*********************************/
-.flex-container a:active,
-.flexslider a:active,
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url("../fonts/flexslider-icon.eot");
+  src: url("../fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("../fonts/flexslider-icon.woff") format("woff"), url("../fonts/flexslider-icon.ttf") format("truetype"), url("../fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover,
 .flex-container a:focus,
-.flexslider a:focus {
+.flex-slider a:focus {
   outline: none; }
 
 .slides,
+.slides > li,
 .flex-control-nav,
 .flex-direction-nav {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/* Icon Fonts
-*********************************/
-/* Font-face Icons */
-@font-face {
-  /*	font-family: 'flexslider-icon';
-  	src:url('fonts/flexslider-icon.eot');
-  	src:url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-  		url('fonts/flexslider-icon.woff') format('woff'),
-  		url('fonts/flexslider-icon.ttf') format('truetype'),
-  		url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');*/
-  font-weight: normal;
-  font-style: normal; }
-/* FlexSlider Necessary Styles
-*********************************/
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
 .flexslider {
   margin: 0;
   padding: 0; }
@@ -2011,16 +2015,11 @@ span.loading {
   display: none;
   -webkit-backface-visibility: hidden; }
 
-/* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {
   width: 100%;
   display: block; }
 
-.flex-pauseplay span {
-  text-transform: capitalize; }
-
-/* Clearfix for the .slides element */
-.slides:after {
+.flexslider .slides:after {
   content: "\0020";
   display: block;
   clear: both;
@@ -2028,52 +2027,52 @@ span.loading {
   line-height: 0;
   height: 0; }
 
-html[xmlns] .slides {
+html[xmlns] .flexslider .slides {
   display: block; }
 
-* html .slides {
+* html .flexslider .slides {
   height: 1%; }
 
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child {
+.no-js .flexslider .slides > li:first-child {
   display: block; }
 
-/* FlexSlider Default Theme
-*********************************/
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
 .flexslider {
   margin: 0 0 60px;
-  background: #fff;
-  border: 4px solid #fff;
+  background: #ffffff;
+  border: 4px solid #ffffff;
   position: relative;
+  zoom: 1;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2); }
+
+.flexslider .slides {
   zoom: 1; }
+
+.flexslider .slides img {
+  height: auto; }
 
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease; }
 
 .loading .flex-viewport {
   max-height: 300px; }
 
-.flexslider .slides {
-  zoom: 1; }
-
 .carousel li {
   margin-right: 5px; }
 
-/* Direction Nav */
 .flex-direction-nav {
   *height: 0; }
 
@@ -2091,9 +2090,22 @@ html[xmlns] .slides {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease; }
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3); }
+
+.flex-direction-nav a.flex-next:before {
+  content: '\f002'; }
 
 .flex-direction-nav .flex-prev {
   left: -50px; }
@@ -2102,15 +2114,18 @@ html[xmlns] .slides {
   right: -50px;
   text-align: right; }
 
-.flexslider:hover .flex-prev {
+.flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 10px; }
 
-.flexslider:hover .flex-next {
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1; }
+
+.flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
   right: 10px; }
 
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+.flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1; }
 
 .flex-direction-nav .flex-disabled {
@@ -2118,16 +2133,6 @@ html[xmlns] .slides {
   filter: alpha(opacity=0);
   cursor: default; }
 
-.flex-direction-nav a:before {
-  font-family: "flexslider-icon";
-  font-size: 40px;
-  display: inline-block;
-  content: '\f001'; }
-
-.flex-direction-nav a.flex-next:before {
-  content: '\f002'; }
-
-/* Pause/Play */
 .flex-pauseplay a {
   display: block;
   width: 20px;
@@ -2150,10 +2155,9 @@ html[xmlns] .slides {
 .flex-pauseplay a:hover {
   opacity: 1; }
 
-.flex-pauseplay a.flex-play:before {
+.flex-pauseplay a .flex-play:before {
   content: '\f003'; }
 
-/* Control Nav */
 .flex-control-nav {
   width: 100%;
   position: absolute;
@@ -2174,14 +2178,13 @@ html[xmlns] .slides {
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   text-indent: -9999px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
   -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
 
 .flex-control-paging li a:hover {
   background: #333;
@@ -2204,9 +2207,15 @@ html[xmlns] .slides {
 
 .flex-control-thumbs img {
   width: 100%;
+  height: auto;
   display: block;
   opacity: .7;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .flex-control-thumbs img:hover {
   opacity: 1; }
@@ -2215,6 +2224,9 @@ html[xmlns] .slides {
   opacity: 1;
   cursor: default; }
 
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
@@ -2223,6 +2235,64 @@ html[xmlns] .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 10px; } }
+/* adding 4.0 flexslider css */
+.flexslider .flex-controls {
+  height: 37px;
+  z-index: 99; }
+
+.flexslider .flex-control-nav {
+  float: right;
+  right: 32px;
+  bottom: 10px;
+  height: 12px;
+  width: auto;
+  z-index: 5; }
+
+.flexslider .flex-control-nav li {
+  vertical-align: top;
+  margin: 0 0 0 5px; }
+
+.flexslider .flex-control-nav li a {
+  border: 1px solid #016691;
+  cursor: pointer;
+  height: 10px;
+  margin-left: 8px;
+  text-indent: -9999px;
+  width: 20px;
+  background: #bed4e7;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none; }
+
+.flexslider .flex-control-nav li a.flex-active {
+  background: #eb8626;
+  border: 1px solid #c15f01;
+  cursor: default; }
+
+.flexslider .flex-controls .flex-pauseplay {
+  bottom: 10px;
+  right: 5px;
+  position: absolute;
+  z-index: 10; }
+
+.flexslider .flex-pauseplay a.flex-pause {
+  background-position: 6px -248px; }
+
+.flexslider .flex-pauseplay a.flex-play {
+  background-position: 8px -232px; }
+
+.flexslider .flex-pauseplay a {
+  background: url(img/sprite_icon_widget.png);
+  border: 0;
+  display: block;
+  height: 10px;
+  width: 20px;
+  position: static;
+  text-indent: -9999px; }
+
 /**********************************************************************
  * CSS Styling for the toggler
  */
@@ -2455,3 +2525,5 @@ FLEXSLIDER
 /*******************************************************************
 Alerts
 ************************/
+
+/*# sourceMappingURL=base.css.map */

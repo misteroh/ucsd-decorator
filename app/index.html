@@ -37,7 +37,7 @@
     <!-- build:js({app,.tmp}) scripts/respond.min.js -->
     <script src="vendor/respond/dest/respond.min.js"></script>
     <!-- endbuild -->
-    <link href="http://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="https://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
     <link href="img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
     <!-- build:js({app,.tmp}) scripts/respond-proxy.js -->
     <script src="scripts/ucsd/respond-proxy.js"></script>
@@ -53,12 +53,12 @@
             <div id="uc-emergency"></div>
 
             <div id="tdr_login"><!-- Start page controls -->
-                <span class="tdr_login_content"></span> <!-- End page controls -->
+                <span id="tdr_login_content"></span> <!-- End page controls -->
             </div>
 
             <div id="tdr_title">
                 <div id="tdr_title_content">
-                    <a href="http://www.ucsd.edu" id="tdr_title_ucsd_title">UC San Diego</a>
+                    <a href="https://www.ucsd.edu" id="tdr_title_ucsd_title">UC San Diego</a>
 
                     <button type="button" class="navbar-toggle needsclick" data-toggle="collapse"
                             data-target="#bs-example-navbar-collapse-1">
@@ -70,7 +70,7 @@
                     <div id="tdr_title_page_title">
 
                         <a href="index.html">
-                            Decorator 4.0
+                            Decorator 4.0.3
                         </a>
                     </div>
 
@@ -87,7 +87,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="">
-                            <a href="#">Templates<span class="caret"></span></a>
+                            <a href="templates.html">Templates</a>
                             <ul>
                                 <li><a href="blank-slate.html">Blank Slate</a></li>
                                 <li><a href="two-column.html">Two Columns</a></li>
@@ -105,7 +105,7 @@
                         </button>
 
                         <div id="tdr_search_content">
-                            <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+                            <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
                                 <select class="search-scope" name="search-scope">
                                     <option selected="selected" value="cwo">This Site</option>
                                     <option value="default_collection">All UCSD Sites</option>
@@ -136,7 +136,7 @@
 
         <main role="main" id="tdr_content">
             <div id="tdr_content_content">
-                <h1>Decorator 4.0 [Work in Progress]</h1>
+                <h1>Decorator 4.0.3</h1>
 
                 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -160,10 +160,10 @@
                     of California. All rights reserved.
                 </div>
                 <ul id="tdr_footer_links">
-                    <li><a href="http://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
                     <li id="tdr_footer_feedback">
 
-                        <a href="http://act.ucsd.edu/cwp/feedback/tool/cwo">Feedback</a>
+                        <a href="https://act.ucsd.edu/cwp/feedback/tool/cwo">Feedback</a>
                     </li>
                 </ul>
             </div>
@@ -180,13 +180,14 @@
 <!-- build:js({app,.tmp}) scripts/jquery.min.js -->
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <!-- endbuild -->
-<script type="text/javascript" src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+<script type="text/javascript" src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
 
 <script type="text/javascript">
     (function ($) {
         $(document).ready(function () {
-            initFooter("http://act.ucsd.edu/cwp/feedback/tool/cwo");
+            initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
             initCopyright();
+            initLogout('http://www.ucsd.edu');
         });
     })(jQuery);
 </script>
@@ -236,7 +237,7 @@
 
 
 <!-- Google Search -->
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">// <![CDATA[
 google.load('search', '1');
 google.setOnLoadCallback(function () {
@@ -246,7 +247,6 @@ google.setOnLoadCallback(function () {
             'cse-site-search');
 });
 // ]]></script>
-<script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
-
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
 </body>
 </html>

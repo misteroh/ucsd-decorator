@@ -20,7 +20,14 @@
     <link rel="stylesheet" href="styles/base.css">
     <!-- endbuild -->
 
-    <!-- Site-specific CSS files -->
+    <!-- Begin site-specific CSS files -->
+    <!-- End site-specific CSS files -->
+
+    <!-- build:css(.tmp) styles/ie-support.css -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/partials/ucsd/ie-support.css">
+    <![endif]-->
+    <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/modernizr.js -->
     <script src="vendor/modernizr/modernizr.js"></script>
@@ -30,7 +37,7 @@
     <!-- build:js({app,.tmp}) scripts/respond.min.js -->
     <script src="vendor/respond/dest/respond.min.js"></script>
     <!-- endbuild -->
-    <link href="http://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="https://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
     <link href="img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
     <!-- build:js({app,.tmp}) scripts/respond-proxy.js -->
     <script src="scripts/ucsd/respond-proxy.js"></script>
@@ -46,11 +53,11 @@
             <div id="uc-emergency"></div>
 
             <div id="tdr_login"><!-- Start page controls -->
-                <span class="tdr_login_content"></span> <!-- End page controls -->
+                <span id="tdr_login_content"></span> <!-- End page controls -->
             </div>
 
             <div id="tdr_title">
-                <div id="tdr_title_content"><a href="http://www.ucsd.edu" id="tdr_title_ucsd_title">UC San Diego</a>
+                <div id="tdr_title_content"><a href="https://www.ucsd.edu" id="tdr_title_ucsd_title">UC San Diego</a>
                     <button type="button" class="navbar-toggle needsclick" data-toggle="collapse"
                             data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
@@ -58,7 +65,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div id="tdr_title_page_title"><a href="#">{Website Title or Department Name}</a>
+                    <div id="tdr_title_page_title">
+                        <a href="#">
+                            Decorator 4.0.3
+                        </a>
                     </div>
                     <a class="search-button" id="tdr_title_search_link">Search</a> <a id="tdr_title_menu_link">Menu</a>
                 </div>
@@ -71,7 +81,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="active">
-                            <a href="#">Templates<span class="caret"></span></a>
+                            <a href="templates.html">Templates</a>
                             <ul>
                                 <li><a href="blank-slate.html">Blank Slate</a></li>
                                 <li><a href="two-column.html">Two Columns</a></li>
@@ -89,7 +99,7 @@
                         </button>
 
                         <div id="tdr_search_content">
-                            <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+                            <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
                                 <select class="search-scope" name="search-scope">
                                     <option selected="selected" value="cwo">This Site</option>
                                     <option value="default_collection">All UCSD Sites</option>
@@ -217,7 +227,7 @@
                     California. All rights reserved.
                 </div>
                 <ul id="tdr_footer_links">
-                    <li><a href="http://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
                     <li id="tdr_footer_feedback">
                         <a href="mailto:sample-email@ucsd.edu">Feedback</a>
                     </li>
@@ -239,14 +249,14 @@
 <!-- build:js({app,.tmp}) scripts/jquery.min.js -->
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <!-- endbuild -->
-<script type="text/javascript" src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+<script type="text/javascript" src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
 
 <script type="text/javascript">
     (function ($) {
         $(document).ready(function () {
-            initFooter("http://act.ucsd.edu/cwp/feedback/tool/cwo");
+            initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
             initCopyright();
-            initLogout('http://ucsd.edu');
+            initLogout('http://www.ucsd.edu');
         });
     })(jQuery);
 </script>
@@ -270,10 +280,8 @@
 
 
 <!-- build:js scripts/vendor.js -->
-<script src="vendor/respond/dest/respond.src.js"></script>
 <script src="vendor/flexslider/jquery.flexslider.js"></script>
 <script src="vendor/superfish/dist/js/superfish.js"></script>
-<script src="vendor/superfish/dist/js/hoverIntent.js"></script>
 <script src="vendor/fastclick/lib/fastclick.js"></script>
 <script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
 <script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
@@ -283,7 +291,6 @@
 <script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
 <script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
 <script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-<script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
 <script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
 <script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
 <script src="vendor/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
@@ -298,8 +305,9 @@
 <script src="scripts/ucsd/drawer.js"></script>
 <!-- endbuild -->
 
+
 <!-- Google Search -->
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">// <![CDATA[
 google.load('search', '1');
 google.setOnLoadCallback(function () {
@@ -309,7 +317,6 @@ google.setOnLoadCallback(function () {
             'cse-site-search');
 });
 // ]]></script>
-<script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
-
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
 </body>
 </html>

@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="styles/homepage-wide.css">
     <!-- endbuild -->
 
+    <!-- build:css(.tmp) styles/ie-support.css -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/partials/ucsd/ie-support.css">
+    <![endif]-->
+    <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/modernizr.js -->
     <script src="vendor/modernizr/modernizr.js"></script>
@@ -33,7 +38,7 @@
     <!-- build:js({app,.tmp}) scripts/respond.min.js -->
     <script src="vendor/respond/dest/respond.min.js"></script>
     <!-- endbuild -->
-    <link href="http://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="https://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
     <link href="img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
     <!-- build:js({app,.tmp}) scripts/respond-proxy.js -->
     <script src="scripts/ucsd/respond-proxy.js"></script>
@@ -50,12 +55,12 @@
             <div id="uc-emergency"></div>
 
             <div id="tdr_login"><!-- Start page controls -->
-                <span class="tdr_login_content"></span> <!-- End page controls -->
+                <span id="tdr_login_content"></span> <!-- End page controls -->
             </div>
 
             <div id="tdr_title">
                 <div id="tdr_title_content">
-                    <a href="http://www.ucsd.edu" id="tdr_title_ucsd_title">UC San Diego</a>
+                    <a href="https://www.ucsd.edu" id="tdr_title_ucsd_title">UC San Diego</a>
 
                     <button type="button" class="navbar-toggle needsclick" data-toggle="collapse"
                             data-target="#bs-example-navbar-collapse-1">
@@ -67,7 +72,7 @@
                     <div id="tdr_title_page_title">
 
                         <a href="/">
-                            Decorator 4.0
+                            Decorator 4.0.3
                         </a>
                     </div>
 
@@ -84,7 +89,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="active">
-                            <a href="#">Templates<span class="caret"></span></a>
+                            <a href="templates.html">Templates</a>
                             <ul>
                                 <li><a href="blank-slate.html">Blank Slate</a></li>
                                 <li><a href="two-column.html">Two Columns</a></li>
@@ -102,7 +107,7 @@
                         </button>
 
                         <div id="tdr_search_content">
-                            <form action="http://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
+                            <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get" id="cse-site-search">
                                 <select class="search-scope" name="search-scope">
                                     <option selected="selected" value="cwo">This Site</option>
                                     <option value="default_collection">All UCSD Sites</option>
@@ -138,7 +143,7 @@
                     <div class="flexslider">
                         <ul class="slides">
                             <li style="width: 100%; float: left; margin-right: -100%; display: list-item;">
-                                <img alt="students" src="img/price-center-east.jpg">
+                                <img alt="students" src="img/price-center_large.jpg">
 
                                 <p class="flex-caption">
                                     <a href="#">Students discover new methods of mixing chemicals together to make blue
@@ -146,7 +151,7 @@
                                 </p>
                             </li>
                             <li style="width: 100%; float: left; margin-right: -100%; display: none;">
-                                <img alt="surf" src="img/nano-labs.jpg">
+                                <img alt="surf" src="img/rt_2_large.jpg">
 
                                 <p class="flex-caption">
                                     <a href="#">New breakthrough technology by UC San Diego makes surfboards 50%
@@ -154,7 +159,7 @@
                                 </p>
                             </li>
                             <li style="width: 100%; float: left; margin-right: -100%; display: none;">
-                                <img alt="rocks" src="img/price-center-east.jpg">
+                                <img alt="rocks" src="img/rt_3_large.jpg">
 
                                 <p class="flex-caption">
                                     UC San Diego students discover rock formations older than originally thought
@@ -194,9 +199,9 @@
                                         style="line-height: 1.2;">Lorem ipsum dolor sit amet</span></li>
                             </ul>
 
-                            <div id="social">
+                            <div class="social">
                                 <h3>Social Media</h3>
-                                <ul id="social-list">
+                                <ul class="social-list">
                                     <li class="facebook"><a>Facebook</a></li>
                                     <li class="twitter"><a>Twitter</a></li>
                                     <li class="youtube"><a>YouTube</a></li>
@@ -216,10 +221,10 @@
                                     as a way to empower incoming freshmen to be successful at UC San Diego
                                 </p>
                             </article>
-                            <a href="_archive/happy-holidays.html">
+                            <a href="#">
                             </a>
 
-                            <h2 class="side"><a href="_archive/happy-holidays.html"> Sustainability Comes Alive During
+                            <h2 class="side"><a href="#"> Sustainability Comes Alive During
                                 UC San Diego’s Earth Week Celebration April 16-20 </a></h2>
                             <article>
                                 <img class="right" src="img/sample4.jpg"
@@ -262,10 +267,10 @@
                     of California. All rights reserved.
                 </div>
                 <ul id="tdr_footer_links">
-                    <li><a href="http://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
                     <li id="tdr_footer_feedback">
 
-                        <a href="http://act.ucsd.edu/cwp/feedback/tool/cwo">Feedback</a>
+                        <a href="https://act.ucsd.edu/cwp/feedback/tool/cwo">Feedback</a>
                     </li>
                 </ul>
             </div>
@@ -282,13 +287,14 @@
 <!-- build:js({app,.tmp}) scripts/jquery.min.js -->
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <!-- endbuild -->
-<script type="text/javascript" src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
+<script type="text/javascript" src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
 
 <script type="text/javascript">
     (function ($) {
         $(document).ready(function () {
-            initFooter("http://act.ucsd.edu/cwp/feedback/tool/cwo");
+            initFooter("https://act.ucsd.edu/cwp/feedback/tool/cwo");
             initCopyright();
+            initLogout('http://www.ucsd.edu');
         });
     })(jQuery);
 </script>
@@ -328,6 +334,7 @@
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/base-min.js -->
+<script src="scripts/ucsd/social.js"></script>
 <script src="scripts/ucsd/nav-search.js"></script>
 <script src="scripts/ucsd/copyright.js"></script>
 <script src="scripts/ucsd/footer.js"></script>
@@ -337,7 +344,7 @@
 <!-- endbuild -->
 
 <!-- Google Search -->
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">// <![CDATA[
 google.load('search', '1');
 google.setOnLoadCallback(function () {
@@ -347,7 +354,6 @@ google.setOnLoadCallback(function () {
             'cse-site-search');
 });
 // ]]></script>
-<script src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
-
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
 </body>
 </html>
