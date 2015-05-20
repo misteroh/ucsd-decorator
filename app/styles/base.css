@@ -404,6 +404,13 @@ main, #tdr_content {
   line-height: 1.4; }
 
 /* --------------------------------------------------------------------
+ * * - 1225px
+ */
+@media only screen and (max-width: 1225px) {
+  #tdr_content_content img {
+    max-width: 100% !important;
+    height: auto !important; } }
+/* --------------------------------------------------------------------
  * * - 768px
  */
 @media only screen and (max-width: 768px) {
@@ -734,7 +741,8 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
     background-color: #FFFFFF; }
 
 #tdr_nav_list, .tdr_nav_list {
-  margin: 0; }
+  margin: 0;
+  font-size: 14px; }
 
 #tdr_nav {
   margin: 0 auto;
@@ -1197,7 +1205,7 @@ footer a:hover, footer a:focus, #tdr_footer a:hover, #tdr_footer a:focus {
 body {
   background: #fff;
   color: #333;
-  font: normal normal normal 14px/1.2 "Helvetica Neue", Helvetica, Arial,	sans-serif; }
+  font: normal normal normal 16px/1.2 proxima-nova, Helvetica, Arial,	sans-serif; }
 
 /* --------------------------------------------------------------------
  * header
@@ -1348,7 +1356,8 @@ figcaption {
  */
 .breadcrumb {
   background-color: white;
-  border-radius: 0px; }
+  border-radius: 0px;
+  font-size: 16px; }
 
 /* because legend doesn't inherit in IE */
 legend {
@@ -1712,6 +1721,10 @@ a.button {
 .social-list li.vimeo {
   background-image: url(img/sprite_social.png);
   background-position: 0 -480px; }
+
+.social-list li.wordpress {
+  background-image: url(img/sprite_social.png);
+  background-position: 0 -520px; }
 
 /**********************************************************************
  * Form Elements
