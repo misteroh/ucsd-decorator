@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /********************* VARIABLES & MIXINS */
 /* BREAKPOINTS */
 /* COLORS */
@@ -404,6 +405,13 @@ main, #tdr_content {
   line-height: 1.4; }
 
 /* --------------------------------------------------------------------
+ * * - 1225px
+ */
+@media only screen and (max-width: 1225px) {
+  #tdr_content_content img {
+    max-width: 100% !important;
+    height: auto !important; } }
+/* --------------------------------------------------------------------
  * * - 768px
  */
 @media only screen and (max-width: 768px) {
@@ -734,7 +742,8 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
     background-color: #FFFFFF; }
 
 #tdr_nav_list, .tdr_nav_list {
-  margin: 0; }
+  margin: 0;
+  font-size: 14px; }
 
 #tdr_nav {
   margin: 0 auto;
@@ -1056,7 +1065,7 @@ div.styled
     float: left;
     width: 385px;
     padding: 10px;
-    background-color: #DFE2E4;
+    background-color: #dfe2e4;
     border: solid #ccc;
     border-width: 0 1px 2px 1px;
     border-radius: 3px 0 3px 3px;
@@ -1064,7 +1073,7 @@ div.styled
     background-clip: padding-box;
     display: none; }
   #tdr_nav .tdr_search.show #tdr_search_toggle {
-    background-color: #DFE2E4;
+    background-color: #dfe2e4;
     color: #fff;
     display: block; }
 .no-csstransitions #tdr_nav .tdr_search #tdr_search_content {
@@ -1088,7 +1097,7 @@ div.styled
   -o-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease; }
 .csstransitions #tdr_nav .tdr_search.show #tdr_search_toggle {
-  background-color: #DFE2E4;
+  background-color: #dfe2e4;
   color: #004b6e;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -1197,7 +1206,7 @@ footer a:hover, footer a:focus, #tdr_footer a:hover, #tdr_footer a:focus {
 body {
   background: #fff;
   color: #333;
-  font: normal normal normal 14px/1.2 "Helvetica Neue", Helvetica, Arial,	sans-serif; }
+  font: normal normal normal 16px/1.2 proxima-nova, Helvetica, Arial,	sans-serif; }
 
 /* --------------------------------------------------------------------
  * header
@@ -1348,7 +1357,8 @@ figcaption {
  */
 .breadcrumb {
   background-color: white;
-  border-radius: 0px; }
+  border-radius: 0px;
+  font-size: 16px; }
 
 /* because legend doesn't inherit in IE */
 legend {
@@ -1486,8 +1496,8 @@ img.right {
  */
 .primary {
   background: #fc0;
-  background: -moz-linear-gradient(top, #fc0, #fa0);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fc0), to(#fa0));
+  background: -moz-linear-gradient(top, #ffcc00, #ffaa00);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffcc00), to(#ffaa00));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc00',endColorstr='#ffaa00'); }
 
 .primary:hover {
@@ -1495,8 +1505,8 @@ img.right {
 
 .primary:disabled {
   background: #fd0;
-  background: -moz-linear-gradient(top, #fd0, #fc0);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fd0), to(#fc0));
+  background: -moz-linear-gradient(top, #ffdd00, #ffcc00);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffdd00), to(#ffcc00));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdd00',endColorstr='#ffcc00'); }
 
 /*---------------------------------------------------------------------
@@ -1504,8 +1514,8 @@ img.right {
  */
 .secondary {
   background: #eee;
-  background: -moz-linear-gradient(top, #eee, #ddd);
-  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+  background: -moz-linear-gradient(top, #eeeeee, #dddddd);
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#dddddd'); }
 
 .secondary:hover {
@@ -1513,8 +1523,8 @@ img.right {
 
 .secondary:disabled {
   background: #fff;
-  background: -moz-linear-gradient(top, #fff, #eee);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  background: -moz-linear-gradient(top, white, #eeeeee);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#eeeeee));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#eeeeee'); }
 
 /*---------------------------------------------------------------------
@@ -1707,6 +1717,14 @@ a.button {
 .social-list li.rss {
   background-image: url(img/sprite_social.png);
   background-position: 0 -440px; }
+
+.social-list li.vimeo {
+  background-image: url(img/sprite_social.png);
+  background-position: 0 -480px; }
+
+.social-list li.wordpress {
+  background-image: url(img/sprite_social.png);
+  background-position: 0 -520px; }
 
 /**********************************************************************
  * Form Elements
@@ -2437,5 +2455,3 @@ FLEXSLIDER
 /*******************************************************************
 Alerts
 ************************/
-
-/*# sourceMappingURL=base.css.map */
