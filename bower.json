@@ -6,7 +6,7 @@
     "bootstrap-sass-official": "~3.1.0",
     "modernizr": "~2.6.2",
     "superfish": "~1.7.5",
-    "flexslider": "*"
+    "flexslider": "2.2.2"
   },
   "devDependencies": {}
 }
