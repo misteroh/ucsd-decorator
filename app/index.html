@@ -22,7 +22,7 @@
 
     <!-- build:css(.tmp) styles/ie-support.css -->
     <!--[if lt IE 9]>
-    <link rel="stylesheet" href="styles/ie-support.css">
+    <link rel="stylesheet" href="styles/partials/ucsd/ie-support.css">
     <![endif]-->
     <!-- endbuild -->
 
@@ -32,6 +32,17 @@
     <!-- build:js({app,.tmp}) scripts/modernizr.js -->
     <script src="vendor/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+    <!--[if lt IE 9]>
+    <!-- build:js({app,.tmp}) scripts/respond.min.js -->
+    <script src="vendor/respond/dest/respond.min.js"></script>
+    <!-- endbuild -->
+    <link href="http://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+    <link href="img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <!-- build:js({app,.tmp}) scripts/respond-proxy.js -->
+    <script src="scripts/ucsd/respond-proxy.js"></script>
+    <!-- endbuild -->
+    <![endif]-->
 </head>
 <body>
 <div id="tdr_wrapper">
@@ -85,12 +96,6 @@
                                 <li><a href="form-a.html">Basic Form</a></li>
                             </ul>
                         </li>
-                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
-                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
-                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
-                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
-                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
-                        <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
                         <li class=""><a href="docs/index.html">Kitchen Sink</a></li>
                     </ul>
 
@@ -172,7 +177,9 @@
 
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- build:js({app,.tmp}) scripts/jquery.min.js -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<!-- endbuild -->
 <script type="text/javascript" src="//www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
 
 <script type="text/javascript">
