@@ -37,4 +37,7 @@ FLEXSLIDER
 #tdr_nav {
   display: block !important; }
 
+#tdr_crumbs_list li {
+  padding-right: 8px; }
+
 /*# sourceMappingURL=ie-support.css.map */
