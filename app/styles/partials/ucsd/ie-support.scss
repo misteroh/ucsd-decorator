@@ -50,3 +50,10 @@ FLEXSLIDER
   padding-right: 8px;
 }
 
+/* docs ie support fix */
+pre {
+  display: inline;
+}
+code {
+  display: inline;
+}
