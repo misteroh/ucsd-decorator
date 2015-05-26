@@ -42,9 +42,11 @@ FLEXSLIDER
 
 /* docs ie support fix */
 pre {
-  display: inline; }
+  display: inline;
+  white-space: pre; }
 
 code {
-  display: inline; }
+  display: inline;
+  white-space: pre; }
 
 /*# sourceMappingURL=ie-support.css.map */
