@@ -37,4 +37,17 @@ FLEXSLIDER
 #tdr_nav {
   display: block !important; }
 
+.breadcrumb li {
+  display: inline;
+  padding-right: 8px; }
+
+/* docs ie support fix */
+pre {
+  display: inline;
+  white-space: pre; }
+
+code {
+  display: inline;
+  white-space: pre; }
+
 /*# sourceMappingURL=ie-support.css.map */
