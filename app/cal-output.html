@@ -22,6 +22,8 @@
 
     <!-- Begin site-specific CSS files -->
     <link rel="stylesheet" href="vendor/fullcalendar/styles/fullcalendar.min.css" />
+    <link rel="stylesheet" href="styles/calendar.css" />
+
     <!-- End site-specific CSS files -->
 
     <!-- build:css(.tmp) styles/ie-support.css -->
@@ -126,12 +128,21 @@
 
         <main role="main" id="tdr_content">
             <div id="tdr_content_content">
-                <h1>Calendar Output</h1>
+                <h1>Calendar Detail</h1>
 
-                <ul>
-                    <li id="id"></li>
-                    <li id="name"></li>
-                    <li id="date"></li>
+                <ul class="cal-detail-list">
+                    <li id="name" class="cal-detail">
+                        <h4>Title</h4>
+                        <span></span>
+                    </li>
+                    <li id="date" class="cal-detail">
+                        <h4>When</h4>
+                        <span></span>
+                    </li>
+                    <li id="time" class="cal-detail">
+                        <h4>Time</h4>
+                        <span></span>
+                    </li>
                 </ul>
             </div>
         </main>
