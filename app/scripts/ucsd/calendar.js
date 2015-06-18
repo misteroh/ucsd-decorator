@@ -9,7 +9,7 @@ $(document).ready( function() {
             console.log("event name: " + calEvent.name);
             console.log("event date: " + calEvent.date);
 
-            var id_url = "output.html?id=" + calEvent.id;
+            var id_url = "cal-output.html?id=" + calEvent.id;
             window.location.href = id_url;
             //console.log(id_url);
         },
