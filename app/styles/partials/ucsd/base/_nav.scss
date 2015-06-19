@@ -91,25 +91,6 @@ html {
   }
 }
 
-body {
-  &.collapse-nav {
-    @media screen and (max-width: $desktop-small) {
-      .navbar-toggle {
-        display: block;
-        top: 23px;
-      }
-
-      #tdr_nav {
-        display: none;
-      }
-
-      #tdr_side_nav {
-        display: block;
-      }
-    }
-  }
-}
-
 #tdr_wrapper {
   overflow: hidden;
 }

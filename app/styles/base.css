@@ -723,15 +723,6 @@ html.no-csstransforms3d.no-csstransitions body.active #tdr_side_nav {
   opacity: 1;
   display: block; }
 
-@media screen and (max-width: 768px) {
-  body.collapse-nav .navbar-toggle {
-    display: block;
-    top: 23px; }
-  body.collapse-nav #tdr_nav {
-    display: none; }
-  body.collapse-nav #tdr_side_nav {
-    display: block; } }
-
 #tdr_wrapper {
   overflow: hidden; }
 
@@ -1017,7 +1008,7 @@ div.styled
 /* end hack */
 #tdr_search_toggle {
   border-radius: 0;
-  padding: 8px;
+  padding: 8px 0;
   background: none;
   border: 1px solid transparent;
   border-width: 0 1px 0 1px;
