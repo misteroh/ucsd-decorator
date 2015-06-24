@@ -91,6 +91,7 @@
                                 <li><a href="fullcalendar.html">FullCalendar</a></li>
                                 <li><a href="datatable.html">DataTable</a></li>
                                 <li><a href="wizard.html">Wizard</a></li>
+                                <li><a href="maxchar.html">MaxChar</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -124,7 +125,7 @@
                     <ol id="tdr_crumbs_list" class="breadcrumb">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="widgets.html">Widgets</a></li>
-                        <li class="active">Wizard</li>
+                        <li class="active">Max Char</li>
                     </ol>
                 </div>
             </div>
@@ -132,22 +133,10 @@
 
         <main role="main" id="tdr_content">
             <div id="tdr_content_content">
-                <h1>Wizard Testing</h1>
+                <h1>MaxChar Testing</h1>
 
-                <ol class="wizard">
-                    <li>
-                        <div>Step 1, cannot go back to this step.</div>
-                    </li>
-                    <li>
-                        <div><a href="#">Step 2, user can go back to this step.</a></div>
-                    </li>
-                    <li class="current">
-                        <div>Step 3, this is the current step.</div>
-                    </li>
-                    <li>
-                        <div>Step 4, this is a future step.</div>
-                    </li>
-                </ol>
+                <textarea class="maxchar"></textarea>
+                <span class="help"></span>
             </div>
         </main>
 
@@ -242,8 +231,10 @@
 
 <!-- Begin site-specific JS files -->
 <script>
-    $(document).ready( function() {
-        $(".wizard").wizard();
+    $(document).ready(function() {
+        $(".maxchar").maxchar( {
+            max : 300
+        } );
     });
 </script>
 <!-- End site-specific JS files -->
