@@ -4,6 +4,9 @@
 
 /********************** VENDOR */
 @import "../vendor/superfish/dist/css/superfish";
+@import "../vendor/datatable/styles/datatables";
+@import "../vendor/fullcalendar/styles/fullcalendar";
+@import "../vendor/wizard/styles/wizard";
 
 /********************* BASE */
 @import "partials/ucsd/base/layout";
