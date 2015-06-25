@@ -11,36 +11,38 @@
     <meta name="PAGETITLE" content="INSERT TITLE HERE">
     <meta name="DESCRIPTION" content="INSERT DESCRIPTION HERE">
 
-
-    <!-- build:css(.tmp) styles/bootstrap.css -->
-    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- build:css(.tmp) ../styles/bootstrap.css -->
+    <link rel="stylesheet" href="../styles/bootstrap.css">
     <!-- endbuild -->
 
     <!-- build:css(.tmp) styles/base-min.css -->
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="../styles/base.css">
     <!-- endbuild -->
 
     <!-- Begin site-specific CSS files -->
+    <!-- build:css ../styles/widgets.css -->
+    <link rel="stylesheet" href="../styles/widgets.css"/>
+    <!-- endbuild -->
     <!-- End site-specific CSS files -->
 
-    <!-- build:css(.tmp) styles/ie-support.css -->
+    <!-- build:css(.tmp) ../styles/ie-support.css -->
     <!--[if lt IE 9]>
-    <link rel="stylesheet" href="styles/partials/ucsd/ie-support.css">
+    <link rel="stylesheet" href="../styles/partials/ucsd/ie-support.css">
     <![endif]-->
     <!-- endbuild -->
 
-    <!-- build:js({app,.tmp}) scripts/modernizr.js -->
-    <script src="vendor/modernizr/modernizr.js"></script>
+    <!-- build:js({app,.tmp}) ../scripts/modernizr.js -->
+    <script src="../vendor/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
     <!--[if lt IE 9]>
-    <!-- build:js({app,.tmp}) scripts/respond.min.js -->
-    <script src="vendor/respond/dest/respond.min.js"></script>
+    <!-- build:js({app,.tmp}) ../scripts/respond.min.js -->
+    <script src="../vendor/respond/dest/respond.min.js"></script>
     <!-- endbuild -->
     <link href="https://cdn.ucsd.edu/cms/decorator-4/scripts/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-    <link href="img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-    <!-- build:js({app,.tmp}) scripts/respond-proxy.js -->
-    <script src="scripts/ucsd/respond-proxy.js"></script>
+    <link href="../img/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+    <!-- build:js({app,.tmp}) ../scripts/respond-proxy.js -->
+    <script src="../scripts/ucsd/respond-proxy.js"></script>
     <!-- endbuild -->
     <![endif]-->
 </head>
@@ -69,9 +71,8 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div id="tdr_title_page_title">
-
-                        <a href="/">
-                            DataTable
+                        <a href="../index.html">
+                            Decorator 4.0.4
                         </a>
                     </div>
                 </div>
@@ -83,10 +84,22 @@
 
                     <ul class="tdr_nav_list">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="../index.html">Home</a>
                         </li>
+                        <li>
+                            <a href="../templates.html">Templates</a>
+                            <ul>
+                                <li><a href="../blank-slate.html">Blank Slate</a></li>
+                                <li><a href="../two-column.html">Two Columns</a></li>
+                                <li><a href="../two-column-b.html">Two Columns B</a></li>
+                                <li><a href="../three-column.html">Three Columns</a></li>
+                                <li><a href="../form-a.html">Basic Form</a></li>
+                                <li><a href="../homepage-wide.html">Homepage Wide</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../docs/index.html">Kitchen Sink</a></li>
                         <li class="active">
-                            <a href="#">Widgets</a>
+                            <a href="../widgets.html">Widgets</a>
                             <ul>
                                 <li><a href="fullcalendar.html">FullCalendar</a></li>
                                 <li><a href="datatable.html">DataTable</a></li>
@@ -123,8 +136,8 @@
             <div id="tdr_crumbs">
                 <div id="tdr_crumbs_content">
                     <ol id="tdr_crumbs_list" class="breadcrumb">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="widgets.html">Widgets</a></li>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../widgets.html">Widgets</a></li>
                         <li class="active">DataTable</li>
                     </ol>
                 </div>
