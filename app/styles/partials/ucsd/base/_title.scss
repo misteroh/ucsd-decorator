@@ -31,12 +31,15 @@ body {
 	}
 }
 
+#tdr_title_ucsd_title, #tdr_title_menu_link {
+  background: transparent url(img/sprite_base.png) no-repeat;
+}
+
 #tdr_title_ucsd_title {
 	position: absolute;
 	display: block;
 	overflow: hidden;
 	text-indent: -999em;
-	background: transparent url(img/sprite_base.png) no-repeat;
 	left: 0;
 	top: 10px;
 	background-position: -239px -14px;
@@ -131,7 +134,7 @@ body {
 	}
 
 	#tdr_title_menu_link {
-		background: url(img/sprite_base.png) no-repeat scroll -461px -47px transparent;
+		background-position:-461px -47px;
 		right: 0;
 	}
 
