@@ -262,16 +262,16 @@ module.exports = function (grunt) {
             }
         },
 
-        svgmin: {
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/img',
-                    src: '{,*/}*.svg',
-                    dest: '<%= config.dist %>/img'
-                }]
-            }
-        },
+        //svgmin: {
+        //    dist: {
+        //        files: [{
+        //            expand: true,
+        //            cwd: '<%= config.app %>/img',
+        //            src: '{,*/}*.svg',
+        //            dest: '<%= config.dist %>/img'
+        //        }]
+        //    }
+        //},
 
         htmlmin: {
             dist: {
@@ -350,7 +350,7 @@ module.exports = function (grunt) {
             styles: {
                 expand: true,
                 dot: true,
-                cwd: '<%= config.app %>/styles',
+                cwd: '<%= config.app %>/styles/**/*',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
             }
@@ -382,7 +382,7 @@ module.exports = function (grunt) {
                 'compass',
                 'copy:styles',
                 'imagemin',
-                'svgmin'
+                //'svgmin'
             ]
         },
 
