@@ -553,12 +553,20 @@ body.collapse-nav #tdr_title_page_title {
   #tdr_title_content form {
     margin-bottom: 0; }
 
+#tdr_title_ucsd_title, #tdr_title_menu_link,
+#tdr_footer_content {
+  background: transparent url(img/sprite_base.png) no-repeat; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #tdr_title_ucsd_title, #tdr_title_menu_link,
+    #tdr_footer_content {
+      background-image: url(img/sprite_base2x.png);
+      background-size: 500px 120px; } }
+
 #tdr_title_ucsd_title {
   position: absolute;
   display: block;
   overflow: hidden;
   text-indent: -999em;
-  background: transparent url(img/sprite_base.png) no-repeat;
   left: 0;
   top: 10px;
   background-position: -239px -14px;
@@ -574,10 +582,6 @@ body.collapse-nav #tdr_title_page_title {
       top: 20px;
       left: auto;
       right: 0; } }
-  @media screen and (-webkit-min-device-pixel-ratio: 2) {
-    #tdr_title_ucsd_title {
-      background-image: url(img/sprite_base2x.png);
-      background-size: 500px 120px; } }
 
 #tdr_title_page_title {
   font-family: "Trebuchet MS", sans-serif;
@@ -635,7 +639,7 @@ body.collapse-nav #tdr_title_page_title {
     margin-right: 2px; }
 
   #tdr_title_menu_link {
-    background: url(img/sprite_base.png) no-repeat scroll -461px -47px transparent;
+    background-position: -461px -47px;
     right: 0; }
 
   .noMenu #tdr_title_search_link {
@@ -1175,15 +1179,15 @@ footer a:hover, footer a:focus, #tdr_footer a:hover, #tdr_footer a:focus {
 #tdr_footer_content {
   font-size: 90%;
   text-align: left;
-  padding: 1em 0;
-  background: 0; }
+  padding: 1em 0; }
+@media only screen and (max-width: 639px ) {
+  #tdr_footer_content {
+    background: none;
+  }
+}
   @media only screen and (min-width: 640px) {
     #tdr_footer_content {
-      background: transparent url(img/sprite_base.png) right -74px no-repeat; } }
-  @media only screen and (min-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
-    #tdr_footer_content {
-      background-image: url(img/sprite_base2x.png);
-      background-size: 500px 120px; } }
+      background-position: right -74px; } }
 
 /* footer links */
 #tdr_footer_links {

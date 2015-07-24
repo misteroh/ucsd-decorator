@@ -45,6 +45,9 @@ FLEXSLIDER
 #tdr_nav {
   display: block !important;
 }
+button.navbar-toggle {
+  display: none !important;
+}
 .breadcrumb li {
   display: inline;
   padding-right: 8px;
