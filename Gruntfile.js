@@ -46,11 +46,11 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             compass: {
-                files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
+                files: ['<%= config.app %>/styles/**/*.{scss,sass}'],
                 tasks: ['compass:server', 'autoprefixer']
             },
             styles: {
-                files: ['<%= config.app %>/styles/{,*/}*.css'],
+                files: ['<%= config.app %>/styles/**/*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
             livereload: {
@@ -230,7 +230,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= config.dist %>'
             },
-            html: ['<%= config.app %>/homepage-wide.html']
+            html: [ '<%= config.app %>/homepage-wide.html', '<%= config.app %>/widgets.html' ]
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -262,16 +262,16 @@ module.exports = function (grunt) {
             }
         },
 
-        svgmin: {
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/img',
-                    src: '{,*/}*.svg',
-                    dest: '<%= config.dist %>/img'
-                }]
-            }
-        },
+        //svgmin: {
+        //    dist: {
+        //        files: [{
+        //            expand: true,
+        //            cwd: '<%= config.app %>/img',
+        //            src: '{,*/}*.svg',
+        //            dest: '<%= config.dist %>/img'
+        //        }]
+        //    }
+        //},
 
         htmlmin: {
             dist: {
@@ -382,7 +382,7 @@ module.exports = function (grunt) {
                 'compass',
                 'copy:styles',
                 'imagemin',
-                'svgmin'
+                //'svgmin'
             ]
         },
 

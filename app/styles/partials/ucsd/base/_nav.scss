@@ -93,7 +93,7 @@ html {
 
 body {
   &.collapse-nav {
-    @media screen and (min-width: $desktop-small) {
+    @media screen and (max-width: $desktop-small) {
       .navbar-toggle {
         display: block;
         top: 23px;
