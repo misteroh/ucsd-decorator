@@ -1,1 +1,11 @@
-node_modules
+.dropbox*
+.idea/
+.sass-cache/
+.tmp/
+
+dist/
+node_modules/
+ucsd-decorator.zip
+
+*.map
+*.txt

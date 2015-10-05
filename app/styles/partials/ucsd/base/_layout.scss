@@ -5,7 +5,7 @@
 /**********************************************************************
  * body - defaults
  */
-#tdr_login,#tdr_title,#tdr_search,#tdr_crumbs,#tdr_content,#tdr_footer {
+main, footer, #tdr_login,#tdr_title,#tdr_search,#tdr_crumbs,#tdr_content,#tdr_footer {
   overflow: hidden;
   width: 100%;
 }
@@ -19,11 +19,9 @@ body #tdr_login_content,body #tdr_title_content,body #tdr_nav_content,body #tdr_
   margin: 0 auto;
   max-width: $desktop;
   width: 98%;
-  width: expression(document.body.clientWidth > 960 ? "960px" : "auto");
 
   @media screen and (min-width: $full) {
     max-width: $full;
-    width: expression(document.body.clientWidth > 1200 ? "1200px" : "auto");
   }
 }
 
@@ -35,7 +33,7 @@ body.fluid #tdr_login_content,body.fluid #tdr_title_content,body.fluid #tdr_nav_
 }
 
 /* wide fluid layout */
-body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
+body.wide main, body.wide #tdr_login, body.wide #tdr_title, body.wide #tdr_search, body.wide #tdr_crumbs, body.wide #tdr_content {
   overflow: visible;
 }
 
@@ -215,7 +213,6 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
 @media only screen {
   body #tdr_login_content,body #tdr_title_content,body #tdr_nav_content,body #tdr_search_content,body #tdr_crumbs_content,body #tdr_content_content,body #tdr_footer_content,body.fluid #tdr_login_content,body.fluid #tdr_title_content,body.fluid #tdr_nav_content,body.fluid #tdr_search_content,body.fluid #tdr_crumbs_content,body.fluid #tdr_content_content,body.fluid #tdr_footer_content
   {
-    /* 		min-width: 0; */
     width: 98%;
   }
 }
@@ -224,6 +221,12 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
  * * - 768px
  */
 @media only screen and (max-width: 768px) { /* layout - new 3 columns */
+
+  body #tdr_login_content,body #tdr_title_content,body #tdr_nav_content,body #tdr_search_content,body #tdr_crumbs_content,body #tdr_content_content,body #tdr_footer_content,body.fluid #tdr_login_content,body.fluid #tdr_title_content,body.fluid #tdr_nav_content,body.fluid #tdr_search_content,body.fluid #tdr_crumbs_content,body.fluid #tdr_content_content,body.fluid #tdr_footer_content
+  {
+    width: 94%;
+  }
+
   /* center column */
   #cols_3 #col_content {
     left: 0;
@@ -333,13 +336,23 @@ body.wide #tdr_login #tdr_title #tdr_search #tdr_crumbs #tdr_content {
  * CSS Styling for the content
  */
 
-#tdr_content {
+main, #tdr_content {
   background: #fff;
   padding: 1em 0;
 }
 
 #tdr_content_content {
   line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------
+ * * - 1225px
+ */
+@media only screen and (max-width: 1225px) {
+  #tdr_content_content img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
 }
 
 /* --------------------------------------------------------------------

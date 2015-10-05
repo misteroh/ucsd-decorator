@@ -3,7 +3,7 @@
 body {
 	background: #fff;
 	color: #333;
-	font: normal normal normal 14px/1.2 "Helvetica Neue", Helvetica, Arial,	sans-serif;
+	font: normal normal normal 16px/1.2 proxima-nova, Helvetica, Arial,	sans-serif;
 }
 
 /* --------------------------------------------------------------------
@@ -11,7 +11,6 @@ body {
  */
 h1,h2,h3,h4,h5,h6 {
 	color: #333;
-	font-weight: bold;
 	line-height: 1.1;
 	margin-top: 0;
 	margin-bottom: .25em;
@@ -101,8 +100,7 @@ a:hover,a:active,
 
 /* external links */
 a[target="_blank"] {
-	background: url(img/sprite_icon.png) no-repeat scroll right -50px
-	transparent;
+	background: url(img/sprite_icon.png) no-repeat scroll right -50px transparent;
 	padding-right: 20px;
 }
 
@@ -154,8 +152,9 @@ ol ol ol {
  */
 pre,code {
 	color: #060;
+    display: inline-block;
 	font-family: Consolas, Monaco, monospace;
-	white-space: pre;
+	white-space: pre-line;
 }
 
 pre {
@@ -188,6 +187,7 @@ figcaption {
 .breadcrumb {
 	background-color: white;
 	border-radius: 0px;
+    font-size: 16px;
 }
 
 
@@ -201,10 +201,4 @@ input,button,textarea,select,optgroup,option {
 	font-size: inherit;
 	font-style: inherit;
 	font-weight: inherit;
-}
-
-/* @purpose To enable resizing for IE
- * @branch For IE6-Win, IE7-Win */
-input,button,textarea,select {
-	*font-size: 100%;
 }

@@ -1,21 +1,16 @@
 #tdr_search_toggle { //toggle button
 	border-radius : 0;
-	padding: 8px;
+	padding: 8px 0;
 	background: none;
-	border: none;
+    border: 1px solid transparent;
+    border-width: 0 1px 0 1px;
 	outline: 0;
 	max-height: $nav-height;
+}
 
-	.lt-ie8 & {
-		padding: 8px 6px 8px 13px;
-		background-image: url(img/search.png);
-		background-repeat: no-repeat;
-		background-position: 2px 8px;
-	}
-
-	.lt-ie8 .show & {
-		background-image: url(img/search-teal.png);
-	}
+.btn-s {
+  border: solid #ccc !important;
+  border-width: 0 1px !important;
 }
 
 .tdr_search { //common styling to both search forms
@@ -35,10 +30,12 @@
 	}
 
 	.search-scope {
+        height: 27px;
 		max-width: 99px;
 		font-size: 11px;
 		padding: 4px 2px 4px 0;
 		float: left;
+        height: 27px;
 	}
 
 	.input-group {
@@ -72,18 +69,22 @@
 			right: 0;
 			top: $nav-height;
 			float: left;
-			width: 520px;
-			padding: 15px;
+			width: 385px;
+			padding: 10px;
 			background-color: $search-bg;
-			border: 0;
+            border: solid #ccc;
+			border-width: 0 1px 2px 1px;
+            border-radius: 3px 0 3px 3px;
 			box-shadow: 0;
 			background-clip: padding-box;
+            display: none;
 		}
 
 		&.show {
 			#tdr_search_toggle {
 				background-color: $search-bg;
 				color: #fff;
+                display: block;
 			}
 		}
 	}
@@ -118,7 +119,7 @@
 			}
 
 			#tdr_search_content {
-				display: block;
+				display: none;
 				opacity: 0;
 				@include transition(background-color, .25s);
 			}
@@ -126,12 +127,13 @@
 			&.show {
 				#tdr_search_toggle {
 					background-color: $search-bg;
-					color: #fff;
+					color: #004b6e;
 					@include transition(all, .25s);
 				}
 
 				#tdr_search_content {
 					opacity: 1;
+                    display: block;
 					@include transition(background-color, .25s);
 				}
 			}
@@ -139,7 +141,7 @@
 	}
 
 	.input-group {
-		width: 360px;
+		width: 250px;
 	}
 }
 
@@ -162,15 +164,12 @@
 				margin-left: 4px;
 			}
 		}
-	}
-
 	.form-control {
 		padding: 6px;
 
-		.lt-ie8 & {
-			width: 96%;
-		}
 	}
+
+
 
 	.input-group {
 		width: 54%;
@@ -184,7 +183,8 @@
 		}
 
 		@media screen and (min-width: $tablet) {
-			width: 75%;
+			width: 55%;
 		}
 	}
+}
 }
